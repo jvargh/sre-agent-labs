@@ -1,0 +1,134 @@
+// =============================================================================
+// ADX Seed — Table Schemas for SRE Agent L300 Workshop (D9)
+// Database: SREWorkshopDB
+// Tables: AppEvents, Errors, Requests
+// Reference: SREA-Level300.md §M5
+// =============================================================================
+
+// --- AppEvents: application-level telemetry events ---
+.create-merge table AppEvents (
+    Timestamp: datetime,
+    EventId: string,
+    EventType: string,
+    ServiceName: string,
+    Environment: string,
+    Severity: string,
+    Message: string,
+    Component: string,
+    UserId: string,
+    SessionId: string,
+    CorrelationId: string,
+    Duration: real,
+    Properties: dynamic
+)
+
+.alter-merge table AppEvents policy retention softdelete = 30d
+
+.create-or-alter table AppEvents ingestion json mapping 'AppEventsMapping'
+```
+[
+    {"column": "Timestamp",     "path": "$.Timestamp",     "datatype": "datetime"},
+    {"column": "EventId",       "path": "$.EventId",       "datatype": "string"},
+    {"column": "EventType",     "path": "$.EventType",     "datatype": "string"},
+    {"column": "ServiceName",   "path": "$.ServiceName",   "datatype": "string"},
+    {"column": "Environment",   "path": "$.Environment",   "datatype": "string"},
+    {"column": "Severity",      "path": "$.Severity",      "datatype": "string"},
+    {"column": "Message",       "path": "$.Message",       "datatype": "string"},
+    {"column": "Component",     "path": "$.Component",     "datatype": "string"},
+    {"column": "UserId",        "path": "$.UserId",        "datatype": "string"},
+    {"column": "SessionId",     "path": "$.SessionId",     "datatype": "string"},
+    {"column": "CorrelationId", "path": "$.CorrelationId", "datatype": "string"},
+    {"column": "Duration",      "path": "$.Duration",      "datatype": "real"},
+    {"column": "Properties",    "path": "$.Properties",    "datatype": "dynamic"}
+]
+```
+
+// --- Errors: error/exception events ---
+.create-merge table Errors (
+    Timestamp: datetime,
+    ErrorId: string,
+    ErrorType: string,
+    ErrorMessage: string,
+    StackTrace: string,
+    ServiceName: string,
+    Component: string,
+    Severity: string,
+    Environment: string,
+    CorrelationId: string,
+    UserId: string,
+    HttpStatusCode: int,
+    RetryCount: int,
+    Properties: dynamic
+)
+
+.alter-merge table Errors policy retention softdelete = 30d
+
+.create-or-alter table Errors ingestion json mapping 'ErrorsMapping'
+```
+[
+    {"column": "Timestamp",      "path": "$.Timestamp",      "datatype": "datetime"},
+    {"column": "ErrorId",        "path": "$.ErrorId",        "datatype": "string"},
+    {"column": "ErrorType",      "path": "$.ErrorType",      "datatype": "string"},
+    {"column": "ErrorMessage",   "path": "$.ErrorMessage",   "datatype": "string"},
+    {"column": "StackTrace",     "path": "$.StackTrace",     "datatype": "string"},
+    {"column": "ServiceName",    "path": "$.ServiceName",    "datatype": "string"},
+    {"column": "Component",      "path": "$.Component",      "datatype": "string"},
+    {"column": "Severity",       "path": "$.Severity",       "datatype": "string"},
+    {"column": "Environment",    "path": "$.Environment",    "datatype": "string"},
+    {"column": "CorrelationId",  "path": "$.CorrelationId",  "datatype": "string"},
+    {"column": "UserId",         "path": "$.UserId",         "datatype": "string"},
+    {"column": "HttpStatusCode", "path": "$.HttpStatusCode", "datatype": "int"},
+    {"column": "RetryCount",     "path": "$.RetryCount",     "datatype": "int"},
+    {"column": "Properties",     "path": "$.Properties",     "datatype": "dynamic"}
+]
+```
+
+// --- Requests: HTTP request telemetry ---
+.create-merge table Requests (
+    Timestamp: datetime,
+    RequestId: string,
+    Method: string,
+    Url: string,
+    StatusCode: int,
+    Duration: real,
+    ServiceName: string,
+    Component: string,
+    Environment: string,
+    UserId: string,
+    SessionId: string,
+    CorrelationId: string,
+    RequestSize: long,
+    ResponseSize: long,
+    ClientIp: string,
+    UserAgent: string,
+    Properties: dynamic
+)
+
+.alter-merge table Requests policy retention softdelete = 30d
+
+.create-or-alter table Requests ingestion json mapping 'RequestsMapping'
+```
+[
+    {"column": "Timestamp",     "path": "$.Timestamp",     "datatype": "datetime"},
+    {"column": "RequestId",     "path": "$.RequestId",     "datatype": "string"},
+    {"column": "Method",        "path": "$.Method",        "datatype": "string"},
+    {"column": "Url",           "path": "$.Url",           "datatype": "string"},
+    {"column": "StatusCode",    "path": "$.StatusCode",    "datatype": "int"},
+    {"column": "Duration",      "path": "$.Duration",      "datatype": "real"},
+    {"column": "ServiceName",   "path": "$.ServiceName",   "datatype": "string"},
+    {"column": "Component",     "path": "$.Component",     "datatype": "string"},
+    {"column": "Environment",   "path": "$.Environment",   "datatype": "string"},
+    {"column": "UserId",        "path": "$.UserId",        "datatype": "string"},
+    {"column": "SessionId",     "path": "$.SessionId",     "datatype": "string"},
+    {"column": "CorrelationId", "path": "$.CorrelationId", "datatype": "string"},
+    {"column": "RequestSize",   "path": "$.RequestSize",   "datatype": "long"},
+    {"column": "ResponseSize",  "path": "$.ResponseSize",  "datatype": "long"},
+    {"column": "ClientIp",      "path": "$.ClientIp",      "datatype": "string"},
+    {"column": "UserAgent",     "path": "$.UserAgent",     "datatype": "string"},
+    {"column": "Properties",    "path": "$.Properties",    "datatype": "dynamic"}
+]
+```
+
+// --- Grant AllDatabasesViewer to the agent UAMI ---
+// Run this after replacing the placeholders:
+// .add database SREWorkshopDB viewers ('aadapp=<UAMI_CLIENT_ID>;<TENANT_ID>')

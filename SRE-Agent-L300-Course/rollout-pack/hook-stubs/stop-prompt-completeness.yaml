@@ -1,0 +1,22 @@
+---
+# Hook A — Stop hook, prompt type (completeness check)
+# From SREA-Level300.md §M9, lines 327–339
+# 
+# Purpose: Validate that the agent's response includes both a root cause statement AND a recommended action.
+# Event: Stop (validates response completeness; rejects up to maxRejections times)
+# Execution: Prompt (LLM evaluates via ReasoningFast model)
+
+hooks:
+  Stop:
+    - type: prompt
+      model: ReasoningFast
+      prompt: |
+        Does the response include both a root cause statement and a recommended action?
+        Answer yes/no. Root cause = explanation of why. Action = concrete next step.
+        
+        Response to evaluate:
+        $ARGUMENTS
+        
+        Respond with {"ok": true} or {"ok": false, "reason": "..."}.
+      timeout: 30
+      maxRejections: 3

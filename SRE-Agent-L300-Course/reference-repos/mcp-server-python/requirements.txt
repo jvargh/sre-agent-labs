@@ -1,0 +1,4 @@
+# Azure SRE Agent MCP Server — Python dependencies
+# Runtime: Python 3.12 (no Docker, runs inside agent container)
+# No external dependencies required for the base server.
+# Add packages below if extending with external API calls.

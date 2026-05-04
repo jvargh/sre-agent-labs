@@ -1,0 +1,37 @@
+---
+# Hook C — PostToolUse hook, command type (audit every tool call + inject audit context)
+# From SREA-Level300.md §M9, line 362 reference
+#
+# Purpose: Log every tool call to stderr (visible in the agent's audit thread) and inject audit context into the response.
+# Event: PostToolUse (fires AFTER a tool is called)
+# Execution: Command (Python script; logs to stderr; injects additionalContext)
+# Output: hookSpecificOutput with additionalContext key (injected into next agent turn)
+
+hooks:
+  PostToolUse:
+    - type: command
+      timeout: 30
+      failMode: allow
+      script: |
+        #!/usr/bin/env python3
+        import sys, json
+        ctx = json.load(sys.stdin)
+        tool_name = ctx.get('tool_name', 'unknown')
+        tool_input = ctx.get('tool_input', {})
+        tool_output = ctx.get('tool_output', '')
+        
+        # Log to stderr for audit trail
+        audit_msg = f"[AUDIT] Tool: {tool_name} | Input keys: {list(tool_input.keys())} | Output size: {len(str(tool_output))} bytes"
+        print(audit_msg, file=sys.stderr)
+        
+        # Inject audit context for next turn
+        audit_context = f"Tool '{tool_name}' executed. Verify result aligns with incident investigation."
+        response = {
+          "decision": "allow",
+          "hookSpecificOutput": {
+            "additionalContext": audit_context
+          }
+        }
+        
+        print(json.dumps(response))
+        sys.exit(0)

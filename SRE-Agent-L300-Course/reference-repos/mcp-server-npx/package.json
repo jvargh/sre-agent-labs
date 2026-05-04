@@ -1,0 +1,27 @@
+{
+  "name": "@workshop/sre-mcp-server",
+  "version": "1.0.0",
+  "description": "Minimal stdio MCP server for Azure SRE Agent workshop (M7)",
+  "main": "index.js",
+  "bin": {
+    "sre-mcp-server": "./index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "mcp",
+    "sre",
+    "azure",
+    "stdio"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workshop/sre-mcp-server-npx"
+  }
+}

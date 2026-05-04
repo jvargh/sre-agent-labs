@@ -1,0 +1,30 @@
+# ── Squad framework (AI team state) ──
+.squad/
+.squad-workstream
+
+# ── Copilot session state ──
+.copilot/
+
+# ── GitHub config (workflows, agents, etc.) ──
+.github/
+
+# ── MCP config ──
+.mcp.json
+
+# ── Squad config ──
+squad.config.ts
+squad-export.json
+
+# ── Git merge driver config ──
+.gitattributes
+
+# ── Source curriculum docs (not deliverables) ──
+SREA-Level200-prompt.md
+SREA-Level200.md
+SREA-Level300-prompt.md
+SREA-Level300.md
+
+# ── QA / sign-off artifacts (internal only) ──
+SRE-Agent-L200-Course/SIGNOFF.md
+SRE-Agent-L300-Course/SIGNOFF.md
+SRE-Agent-L300-Course/QA-DEFECTS.md

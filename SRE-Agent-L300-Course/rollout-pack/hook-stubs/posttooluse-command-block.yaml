@@ -1,0 +1,29 @@
+---
+# Hook B — PostToolUse hook, command type (block dangerous shell patterns)
+# From SREA-Level300.md §M9, lines 343–360
+#
+# Purpose: Block dangerous shell/Azure patterns that could cause unintended damage.
+# Event: PostToolUse (fires AFTER a tool is called; can audit or block)
+# Execution: Command (Python script in sandboxed code interpreter; stdin = tool context; exit 0 = allow, 2 = block)
+# Matcher: Applies to bash, ExecuteShellCommand, RunAzCliWriteCommands
+
+hooks:
+  PostToolUse:
+    - type: command
+      matcher: "Bash|ExecuteShellCommand|RunAzCliWriteCommands"
+      timeout: 30
+      failMode: block
+      script: |
+        #!/usr/bin/env python3
+        import sys, json, re
+        ctx = json.load(sys.stdin)
+        cmd = ctx.get('tool_input', {}).get('command', '')
+        
+        # Dangerous patterns to block
+        for pat in [r'\brm\s+-rf\b', r'\bsudo\b', r'\bchmod\s+777\b', r'az\s+(group|account)\s+delete']:
+            if re.search(pat, cmd):
+                print(json.dumps({"decision": "block", "reason": f"Blocked: {pat} is dangerous. Remove and resubmit."}))
+                sys.exit(0)
+        
+        print(json.dumps({"decision": "allow"}))
+        sys.exit(0)
