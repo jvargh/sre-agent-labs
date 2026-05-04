@@ -163,10 +163,3 @@ Each lab follows the corresponding page on [sre.azure.com/docs](https://sre.azur
 7. **Mirror the docs URL set** in the Reference Index above.
 8. **All prompts must be safe for 20+ attendees** against a shared workload.
 
----
-
-## Curriculum Design Document
-
-The file `SREA-Level200.md` at the repository root is the **curriculum design document**. It contains the full course map, learning outcomes, lab outlines, prerequisites, and success metrics used to build this workshop.
-
-> ⚠️ **Do NOT distribute `SREA-Level200.md` to attendees.** It is an internal trainer resource only.
