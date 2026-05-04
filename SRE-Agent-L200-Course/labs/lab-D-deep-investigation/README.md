@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Module** | M6 — Lab D |
+| **Module** | Lab D |
 | **Level** | 200 (Hands-on) |
 | **Duration** | 30 minutes |
 | **Docs reference** | [Run a Deep Investigation](https://sre.azure.com/docs/tutorials/advanced/deep-investigation) |
@@ -186,7 +186,7 @@ See [troubleshooting.md](troubleshooting.md) for the full table. Quick reference
 ## Cleanup
 
 1. Turn off deep investigation mode (Step 7) if still active.
-2. No resources to delete — deep investigation threads are retained in chat history for review in Module 8 (Operate, Audit, Share).
+2. No resources to delete — deep investigation threads are retained in chat history for review in the Operate, Audit, Share module.
 
 ---
 

@@ -77,4 +77,4 @@
 
 ---
 
-*Source: SREA-Level200.md §M2 Access Control Model*
+*Source: SREA-Level200.md — Access Control Model*

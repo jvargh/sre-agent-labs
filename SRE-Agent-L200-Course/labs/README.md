@@ -13,8 +13,8 @@ Welcome to the **SRE Agent Level 200 (L200) labs**. These five labs form a **seq
 | **A** | 3 (L200) | Provision Your First Agent | 45 min | [Lab A — Provision](./lab-A-provision/) |
 | **B** | 4 (L200) | Connect Code, Resources, and Knowledge | 45 min | [Lab B — Connect](./lab-B-connect/) |
 | **C** | 5 (L200) | First Investigation in Chat | 30 min | [Lab C — First Investigation](./lab-C-first-investigation/) |
-| **D** | 6 (M6 — Lab D) | Deep Investigation (Chat Mode Only) | 30 min | [Lab D — Deep Investigation](./lab-D-deep-investigation/) |
-| **E** | 7 (M7 — Lab E Capstone) | Automate: Connector + Custom Agent + Scheduled Task | 45 min | [Lab E — Automate](./lab-E-automate/) |
+| **D** | 6 (L200) | Deep Investigation (Chat Mode Only) | 30 min | [Lab D — Deep Investigation](./lab-D-deep-investigation/) |
+| **E** | 7 (L200 Capstone) | Automate: Connector + Custom Agent + Scheduled Task | 45 min | [Lab E — Automate](./lab-E-automate/) |
 
 **Total time commitment:** ~195 minutes (~3.25 hours)
 

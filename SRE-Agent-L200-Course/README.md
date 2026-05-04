@@ -28,18 +28,18 @@ Send to attendees **1 week before** the workshop:
 
 ## Module Map
 
-| Module | Level | Title | Mode | Duration |
-|--------|-------|-------|------|----------|
-| M1 | 100 | What & Why: SRE Agent Concepts | Lecture | 30 min |
-| M2 | 100 | Access Control Model | Lecture + diagram walkthrough | 30 min |
-| M3 | 200 | [Lab A — Provision Your First Agent](labs/lab-A-provision/) | Hands-on | 45 min |
-| M4 | 200 | [Lab B — Connect Code, Resources, and Knowledge](labs/lab-B-connect/) | Hands-on | 45 min |
+| # | Level | Title | Mode | Duration |
+|---|-------|-------|------|----------|
+| 1 | 100 | What & Why: SRE Agent Concepts | Lecture | 30 min |
+| 2 | 100 | Access Control Model | Lecture + diagram walkthrough | 30 min |
+| 3 | 200 | [Lab A — Provision Your First Agent](labs/lab-A-provision/) | Hands-on | 45 min |
+| 4 | 200 | [Lab B — Connect Code, Resources, and Knowledge](labs/lab-B-connect/) | Hands-on | 45 min |
 | — | — | ☕ Break | — | 10 min |
-| M5 | 200 | [Lab C — First Investigation in Chat](labs/lab-C-first-investigation/) | Hands-on | 30 min |
-| M6 | 200 | [Lab D — Deep Investigation (chat mode only)](labs/lab-D-deep-investigation/) | Hands-on | 30 min |
-| M7 | 200 | [Lab E — Automate: Connector + Custom Agent + Scheduled Task](labs/lab-E-automate/) | Hands-on | 45 min |
-| M8 | 200 | Operate, Audit, Share | Lecture + click-through | 20 min |
-| M9 | 100 | Wrap-Up + Bridge to Level 300 | Lecture | 15 min |
+| 5 | 200 | [Lab C — First Investigation in Chat](labs/lab-C-first-investigation/) | Hands-on | 30 min |
+| 6 | 200 | [Lab D — Deep Investigation (chat mode only)](labs/lab-D-deep-investigation/) | Hands-on | 30 min |
+| 7 | 200 | [Lab E — Automate: Connector + Custom Agent + Scheduled Task](labs/lab-E-automate/) | Hands-on | 45 min |
+| 8 | 200 | Operate, Audit, Share | Lecture + click-through | 20 min |
+| 9 | 100 | Wrap-Up + Bridge to Level 300 | Lecture | 15 min |
 
 **Total:** ~4 hours 10 min (including break)
 
@@ -52,12 +52,12 @@ SRE-Agent-L200-Course/
 ├── README.md                          ← You are here — master workshop guide
 ├── labs/
 │   ├── README.md                      ← Labs index
-│   ├── lab-A-provision/               ← M3: Provision Your First Agent
-│   ├── lab-B-connect/                 ← M4: Connect Code, Resources, and Knowledge
-│   ├── lab-C-first-investigation/     ← M5: First Investigation in Chat
-│   ├── lab-D-deep-investigation/      ← M6: Deep Investigation
-│   └── lab-E-automate/                ← M7: Automate: Connector + Custom Agent + Scheduled Task
-├── slides/                            ← Slide decks (M1, M2, M8, M9)
+│   ├── lab-A-provision/               ← Provision Your First Agent
+│   ├── lab-B-connect/                 ← Connect Code, Resources, and Knowledge
+│   ├── lab-C-first-investigation/     ← First Investigation in Chat
+│   ├── lab-D-deep-investigation/      ← Deep Investigation
+│   └── lab-E-automate/                ← Automate: Connector + Custom Agent + Scheduled Task
+├── slides/                            ← Slide decks (lecture modules)
 ├── handouts/                          ← Pre-flight checklist, glossary card, access-control cheatsheet
 ├── prompts/                           ← Copy-pasteable chat prompts per lab
 ├── sandbox/                           ← IaC for shared sandbox + sample workload
@@ -96,11 +96,11 @@ SRE-Agent-L200-Course/
 
 Labs are **sequential** — each lab builds on the previous:
 
-1. **Lab A (M3):** Provision the agent — creates the resource, managed identity, App Insights, and Log Analytics workspace.
-2. **Lab B (M4):** Connect code, Azure resources, and upload knowledge documents — the agent needs these before it can investigate anything.
-3. **Lab C (M5):** First investigation in chat — attendees run diagnostic prompts against the connected resources.
-4. **Lab D (M6):** Deep investigation — a more complex, multi-phase investigation using the deep investigation feature.
-5. **Lab E (M7):** Automate — wire up Outlook connector, create a custom agent, attach a scheduled task.
+1. **Lab A:** Provision the agent — creates the resource, managed identity, App Insights, and Log Analytics workspace.
+2. **Lab B:** Connect code, Azure resources, and upload knowledge documents — the agent needs these before it can investigate anything.
+3. **Lab C:** First investigation in chat — attendees run diagnostic prompts against the connected resources.
+4. **Lab D:** Deep investigation — a more complex, multi-phase investigation using the deep investigation feature.
+5. **Lab E:** Automate — wire up Outlook connector, create a custom agent, attach a scheduled task.
 
 Each lab follows the corresponding page on [sre.azure.com/docs](https://sre.azure.com/docs). Screenshots and step-by-step instructions are on those doc pages.
 

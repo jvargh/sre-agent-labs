@@ -10,22 +10,22 @@
 
 | Time | Duration | Module | Mode |
 |------|----------|--------|------|
-| 0:00 – 0:30 | 30 min | M1 — What & Why: SRE Agent Concepts | Lecture |
-| 0:30 – 1:00 | 30 min | M2 — Access Control Model | Lecture + diagram |
-| 1:00 – 1:45 | 45 min | M3 — Lab A: Provision Your First Agent | Hands-on |
-| 1:45 – 2:30 | 45 min | M4 — Lab B: Connect Code, Resources, Knowledge | Hands-on |
+| 0:00 – 0:30 | 30 min | What & Why: SRE Agent Concepts | Lecture |
+| 0:30 – 1:00 | 30 min | Access Control Model | Lecture + diagram |
+| 1:00 – 1:45 | 45 min | Lab A: Provision Your First Agent | Hands-on |
+| 1:45 – 2:30 | 45 min | Lab B: Connect Code, Resources, Knowledge | Hands-on |
 | 2:30 – 2:40 | 10 min | ☕ Break | — |
-| 2:40 – 3:10 | 30 min | M5 — Lab C: First Investigation in Chat | Hands-on |
-| 3:10 – 3:40 | 30 min | M6 — Lab D: Deep Investigation | Hands-on |
-| 3:40 – 4:25 | 45 min | M7 — Lab E: Automate (Connector + Agent + Task) | Hands-on |
-| 4:25 – 4:45 | 20 min | M8 — Operate, Audit, Share | Lecture + click-through |
-| 4:45 – 5:00 | 15 min | M9 — Wrap-Up + Bridge to Level 300 | Lecture |
+| 2:40 – 3:10 | 30 min | Lab C: First Investigation in Chat | Hands-on |
+| 3:10 – 3:40 | 30 min | Lab D: Deep Investigation | Hands-on |
+| 3:40 – 4:25 | 45 min | Lab E: Automate (Connector + Agent + Task) | Hands-on |
+| 4:25 – 4:45 | 20 min | Operate, Audit, Share | Lecture + click-through |
+| 4:45 – 5:00 | 15 min | Wrap-Up + Bridge to Level 300 | Lecture |
 
 ---
 
 ## Module-by-Module Script
 
-### M1 — What & Why: SRE Agent Concepts (0:00 – 0:30)
+### What & Why: SRE Agent Concepts (0:00 – 0:30)
 
 **Opening (0:00 – 0:05)**
 - Welcome attendees, confirm audio/video, point to the support channel.
@@ -45,13 +45,13 @@
 - Tailor your examples based on the room's composition. If mostly developers, lean into the code-aware investigation angle. If mostly ops, emphasize the runbook and automation story.
 
 **Transition (0:25 – 0:30)**
-- "Before we touch the portal, we need to understand who can do what — that's M2."
+- "Before we touch the portal, we need to understand who can do what — that's the next section on Access Control."
 
 **🧑‍🏫 TA Notes:** TAs are passive during lecture. Have them verify the support channel is working and confirm each attendee's browser can reach `sre.azure.com`.
 
 ---
 
-### M2 — Access Control Model (0:30 – 1:00)
+### Access Control Model (0:30 – 1:00)
 
 **Opening (0:30 – 0:33)**
 - "This module prevents 80% of 'why didn't this work?' issues during the labs."
@@ -68,11 +68,11 @@
 **Transition (0:55 – 1:00)**
 - "Now you know the access model. Let's go build an agent. Open your browser to sre.azure.com."
 
-**🧑‍🏫 TA Notes:** TAs should be ready to help with Entra ID sign-in issues at the start of M3.
+**🧑‍🏫 TA Notes:** TAs should be ready to help with Entra ID sign-in issues at the start of Lab A.
 
 ---
 
-### M3 — Lab A: Provision Your First Agent (1:00 – 1:45)
+### Lab A: Provision Your First Agent (1:00 – 1:45)
 
 **Opening (1:00 – 1:05)**
 - Demo the create flow on your screen: sre.azure.com → Create agent → Basics wizard.
@@ -97,7 +97,7 @@
 
 ---
 
-### M4 — Lab B: Connect Code, Resources, Knowledge (1:45 – 2:30)
+### Lab B: Connect Code, Resources, Knowledge (1:45 – 2:30)
 
 **Opening (1:45 – 1:50)**
 - Demo Part 1 (code repo connection) on your screen. Show OAuth flow.
@@ -132,11 +132,11 @@
 ### ☕ Break (2:30 – 2:40)
 
 - "10 minutes. When we come back, we start talking to the agent."
-- TAs: use this time to catch up anyone who fell behind on M3 or M4.
+- TAs: use this time to catch up anyone who fell behind on Lab A or Lab B.
 
 ---
 
-### M5 — Lab C: First Investigation in Chat (2:40 – 3:10)
+### Lab C: First Investigation in Chat (2:40 – 3:10)
 
 **Opening (2:40 – 2:45)**
 - "Now the fun part. You're going to ask the agent questions and see it work."
@@ -159,11 +159,11 @@
 **Transition (3:08 – 3:10)**
 - "Regular chat is powerful, but sometimes you need the agent to go deep. That's next."
 
-**🧑‍🏫 TA Notes:** Circulate and verify each attendee gets at least 3 successful chat responses. If an agent returns thin results, check that resources and code repo are connected (M4).
+**🧑‍🏫 TA Notes:** Circulate and verify each attendee gets at least 3 successful chat responses. If an agent returns thin results, check that resources and code repo are connected (Lab B).
 
 ---
 
-### M6 — Lab D: Deep Investigation (3:10 – 3:40)
+### Lab D: Deep Investigation (3:10 – 3:40)
 
 **Opening (3:10 – 3:13)**
 - "Deep investigation is the heavy artillery. It's a multi-phase, hypothesis-driven investigation."
@@ -194,7 +194,7 @@
 
 ---
 
-### M7 — Lab E: Automate (3:40 – 4:25)
+### Lab E: Automate (3:40 – 4:25)
 
 **Opening (3:40 – 3:45)**
 - "This is the capstone. You'll wire up email notifications and a scheduled health check."
@@ -236,7 +236,7 @@
 
 ---
 
-### M8 — Operate, Audit, Share (4:25 – 4:45)
+### Operate, Audit, Share (4:25 – 4:45)
 
 **Click-Through Tour (no lab) (4:25 – 4:43)**
 - This is presenter-led. Attendees watch and follow along in their own portals.
@@ -257,7 +257,7 @@
 
 ---
 
-### M9 — Wrap-Up + Bridge to Level 300 (4:45 – 5:00)
+### Wrap-Up + Bridge to Level 300 (4:45 – 5:00)
 
 **Recap Slide (4:45 – 4:50)**
 - "5 things every team member should now do day-to-day:"

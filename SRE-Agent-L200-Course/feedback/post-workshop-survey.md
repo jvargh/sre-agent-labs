@@ -56,15 +56,15 @@ These questions measure confidence change — a key success metric for this work
 
 | Module | Too Easy | About Right | Too Difficult | Did Not Attempt |
 |--------|----------|-------------|---------------|-----------------|
-| M1 — What & Why: Concepts (Lecture) | ☐ | ☐ | ☐ | ☐ |
-| M2 — Access Control Model (Lecture) | ☐ | ☐ | ☐ | ☐ |
-| M3 — Lab A: Provision Your First Agent | ☐ | ☐ | ☐ | ☐ |
-| M4 — Lab B: Connect Code, Resources, Knowledge | ☐ | ☐ | ☐ | ☐ |
-| M5 — Lab C: First Investigation in Chat | ☐ | ☐ | ☐ | ☐ |
-| M6 — Lab D: Deep Investigation | ☐ | ☐ | ☐ | ☐ |
-| M7 — Lab E: Automate | ☐ | ☐ | ☐ | ☐ |
-| M8 — Operate, Audit, Share (Lecture) | ☐ | ☐ | ☐ | ☐ |
-| M9 — Wrap-Up + Bridge to Level 300 | ☐ | ☐ | ☐ | ☐ |
+| What & Why: Concepts (Lecture) | ☐ | ☐ | ☐ | ☐ |
+| Access Control Model (Lecture) | ☐ | ☐ | ☐ | ☐ |
+| Lab A: Provision Your First Agent | ☐ | ☐ | ☐ | ☐ |
+| Lab B: Connect Code, Resources, Knowledge | ☐ | ☐ | ☐ | ☐ |
+| Lab C: First Investigation in Chat | ☐ | ☐ | ☐ | ☐ |
+| Lab D: Deep Investigation | ☐ | ☐ | ☐ | ☐ |
+| Lab E: Automate | ☐ | ☐ | ☐ | ☐ |
+| Operate, Audit, Share (Lecture) | ☐ | ☐ | ☐ | ☐ |
+| Wrap-Up + Bridge to Level 300 | ☐ | ☐ | ☐ | ☐ |
 
 ---
 
@@ -88,28 +88,28 @@ These questions measure confidence change — a key success metric for this work
 
 **Q8.** What was the **most useful** part of the workshop? *(Select one.)*
 
-- [ ] M1 — Concepts overview
-- [ ] M2 — Access control model
+- [ ] Concepts overview
+- [ ] Access control model
 - [ ] Lab A — Provisioning the agent
 - [ ] Lab B — Connecting code, resources, knowledge
 - [ ] Lab C — First investigation in chat
 - [ ] Lab D — Deep investigation
 - [ ] Lab E — Automate (connector + subagent + scheduled task)
-- [ ] M8 — Operate, audit, share walkthrough
-- [ ] M9 — Level 300 bridge / what's next
+- [ ] Operate, audit, share walkthrough
+- [ ] Level 300 bridge / what's next
 - [ ] Other: _______________
 
 **Q9.** What was the **least useful** part of the workshop? *(Select one.)*
 
-- [ ] M1 — Concepts overview
-- [ ] M2 — Access control model
+- [ ] Concepts overview
+- [ ] Access control model
 - [ ] Lab A — Provisioning the agent
 - [ ] Lab B — Connecting code, resources, knowledge
 - [ ] Lab C — First investigation in chat
 - [ ] Lab D — Deep investigation
 - [ ] Lab E — Automate (connector + subagent + scheduled task)
-- [ ] M8 — Operate, audit, share walkthrough
-- [ ] M9 — Level 300 bridge / what's next
+- [ ] Operate, audit, share walkthrough
+- [ ] Level 300 bridge / what's next
 - [ ] Nothing — everything was useful
 - [ ] Other: _______________
 

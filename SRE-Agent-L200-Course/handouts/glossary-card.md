@@ -60,4 +60,4 @@
 
 ---
 
-*Source: SREA-Level200.md §M1 Glossary Slide*
+*Source: SREA-Level200.md — Glossary Slide*

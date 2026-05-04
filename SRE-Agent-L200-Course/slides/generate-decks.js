@@ -71,7 +71,7 @@ function deferralSlide(pres) {
 }
 
 // ═══════════════════════════════════════════
-// DECK 1 — M1 Concepts
+// DECK 1 — Concepts
 // ═══════════════════════════════════════════
 function buildDeck1() {
   const pres = new pptxgen();
@@ -184,12 +184,12 @@ function buildDeck1() {
   // S7 Deferral
   deferralSlide(pres);
 
-  pres.writeFile({ fileName: path.join(__dirname, "M1-concepts.pptx") });
-  console.log("  ✓ M1-concepts.pptx");
+  pres.writeFile({ fileName: path.join(__dirname, "concepts.pptx") });
+  console.log("  ✓ concepts.pptx");
 }
 
 // ═══════════════════════════════════════════
-// DECK 2 — M2 Access Control
+// DECK 2 — Access Control
 // ═══════════════════════════════════════════
 function buildDeck2() {
   const pres = new pptxgen();
@@ -335,12 +335,12 @@ function buildDeck2() {
   // S8 Deferral
   deferralSlide(pres);
 
-  pres.writeFile({ fileName: path.join(__dirname, "M2-access-control.pptx") });
-  console.log("  ✓ M2-access-control.pptx");
+  pres.writeFile({ fileName: path.join(__dirname, "access-control.pptx") });
+  console.log("  ✓ access-control.pptx");
 }
 
 // ═══════════════════════════════════════════
-// DECK 3 — M8 Operate, Audit, Share
+// DECK 3 — Operate, Audit, Share
 // ═══════════════════════════════════════════
 function buildDeck3() {
   const pres = new pptxgen();
@@ -454,12 +454,12 @@ function buildDeck3() {
   // S7 Deferral
   deferralSlide(pres);
 
-  pres.writeFile({ fileName: path.join(__dirname, "M8-operate-audit-share.pptx") });
-  console.log("  ✓ M8-operate-audit-share.pptx");
+  pres.writeFile({ fileName: path.join(__dirname, "operate-audit-share.pptx") });
+  console.log("  ✓ operate-audit-share.pptx");
 }
 
 // ═══════════════════════════════════════════
-// DECK 4 — M9 Wrap-Up
+// DECK 4 — Wrap-Up
 // ═══════════════════════════════════════════
 function buildDeck4() {
   const pres = new pptxgen();
@@ -566,8 +566,8 @@ function buildDeck4() {
     });
   }
 
-  pres.writeFile({ fileName: path.join(__dirname, "M9-wrapup.pptx") });
-  console.log("  ✓ M9-wrapup.pptx");
+  pres.writeFile({ fileName: path.join(__dirname, "wrapup.pptx") });
+  console.log("  ✓ wrapup.pptx");
 }
 
 // ── Main ──
