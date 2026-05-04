@@ -8,16 +8,16 @@ Welcome to the comprehensive training curriculum for **Azure SRE Agent**. This r
 
 Azure SRE Agent is a production-grade tool for incident response, root-cause analysis, and operational automation in Azure environments. These courses teach you to provision agents, connect them to your infrastructure, and orchestrate sophisticated incident workflows at scale.
 
-| Course | Level | Duration | Audience | Labs/Modules | Status |
-|--------|-------|----------|----------|--------------|--------|
+| Course | Level | Duration | Audience | Labs | Status |
+|--------|-------|----------|----------|------|--------|
 | [**Level 200**](SRE-Agent-L200-Course/) | Foundational → Hands-On | ~3.25 hrs | DevOps/SRE teams, new to SRE Agent | 5 labs (A–E) | Core curriculum |
-| [**Level 300**](SRE-Agent-L300-Course/) | Advanced | ~17 hrs (2 days) | L200 graduates; operators & architects | 13 modules (M1–M13) | Advanced track |
+| [**Level 300**](SRE-Agent-L300-Course/) | Advanced | ~17 hrs (2 days) | L200 graduates; operators & architects | 13 labs | Advanced track |
 
 ---
 
 ## 📚 Level 200 Workshop — Introduction to SRE Agent
 
-**Duration:** ~3.25 hours (or 5 modules × 45 min each for self-paced)  
+**Duration:** ~3.25 hours (or 5 labs × 45 min each for self-paced)  
 **Audience:** DevOps and SRE-Ops teams (developers, on-call engineers, platform/cloud admins, SRE leads)
 
 ### What You'll Learn
@@ -52,10 +52,10 @@ Azure SRE Agent is a production-grade tool for incident response, root-cause ana
 - **Advanced Observability:** Audit trails, FinOps analytics, cross-tenant architectures
 - **Capstone Project:** Deploy a multi-agent incident drill end-to-end
 
-### Modules M1–M13
-- **M1–M3:** Foundation (promotion playbook, incident-platform connection, response plans)
-- **M4–M7:** Tools & Integrations (Skills, Kusto, custom agents, MCP ecosystem)
-- **M8–M13:** Advanced Features & Architecture (Python tools, hooks, audit/FinOps, enterprise topology, IaC, capstone)
+### Labs 1–13
+- **Labs 1–3:** Foundation (promotion playbook, incident-platform connection, response plans)
+- **Labs 4–7:** Tools & Integrations (Skills, Kusto, custom agents, MCP ecosystem)
+- **Labs 8–13:** Advanced Features & Architecture (Python tools, hooks, audit/FinOps, enterprise topology, IaC, capstone)
 
 ### Getting Started with L300
 - **Hard Prerequisite:** Level 200 completion required (no exceptions)
@@ -88,10 +88,10 @@ The courses build sequentially; L300 assumes L200 knowledge and expects you to h
 
 ### Course Materials
 - **L200 Course:** [SRE-Agent-L200-Course/](SRE-Agent-L200-Course/)
-  - Module map, prerequisites, trainer notes, knowledge samples
+  - Course map, prerequisites, trainer notes, knowledge samples
   - Labs follow the docs step-by-step
 - **L300 Course:** [SRE-Agent-L300-Course/](SRE-Agent-L300-Course/)
-  - 13 modules across 2 days, 3 parallel tracks
+  - 13 labs across 2 days, 3 parallel tracks
   - Sandbox provisioning scripts, trainer runbooks, rollout pack
 
 ### GitHub
@@ -111,31 +111,9 @@ The courses build sequentially; L300 assumes L200 knowledge and expects you to h
 - Attendees with non-default response plan dispatching to custom agent: **100%**
 - Attendees with ≥1 Stop hook + ≥1 PostToolUse hook: **100%**
 - Attendees with ≥1 Kusto tool + ≥1 Python tool in production: **≥90%**
-- Capstone drill (M13) handled end-to-end: **≥80%**
+- Capstone drill (Lab 13) handled end-to-end: **≥80%**
 - Agent-as-code PR landed within 2 weeks post-workshop: **≥75%**
 
 ---
 
 ## 🛠️ Trainer Information
-
-Both courses include comprehensive trainer support:
-- **Timing scripts** — minute-by-minute facilitator guidance
-- **Failure recovery guides** — troubleshooting for live demos
-- **Sandbox provisioning** — automation scripts for sandbox setup and teardown
-- **Operations runbooks** — day-of checklists, FAQs, escalation trees
-- **Feedback forms** — post-workshop surveys for continuous improvement
-
-Trainers: refer to the `trainer-notes/` subdirectories in each course folder for detailed guidance.
-
----
-
-## 📞 Support & Feedback
-
-- For questions about course content, refer to the course-specific README files
-- For SRE Agent product issues or documentation corrections, visit [https://sre.azure.com/docs](https://sre.azure.com/docs)
-- Post-workshop feedback is collected via survey forms included in each course
-
----
-
-**Last Updated:** 2026-05-03  
-**Version:** srea-curriculum-1.0.0
