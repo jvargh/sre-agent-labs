@@ -1,6 +1,6 @@
 # 🔐 SRE Agent — Access Control Cheat Sheet
 
-> **Module 2 Quick Reference** · The three-layer model you need for every lab.
+> **Quick Reference** · The three-layer model you need for every lab.
 
 ---
 

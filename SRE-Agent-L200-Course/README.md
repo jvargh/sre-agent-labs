@@ -2,8 +2,8 @@
 
 > **Audience:** DevOps and SRE-Ops teams (developers, on-call engineers, platform/cloud admins, SRE leads)
 > **Level:** 100 (foundational concepts) → 200 (hands-on first-value scenarios)
-> **Duration:** ~4 hours (half-day workshop) or 5-module self-paced track (~45 min each)
-> **Delivery model:** Slides for L100 modules, live demo + lab for L200 modules. Each lab uses a shared non-prod sandbox subscription.
+> **Duration:** ~4 hours (half-day workshop) or 5-part self-paced track (~45 min each)
+> **Delivery model:** Slides for L100 sessions, live demo + lab for L200 sessions. Each lab uses a shared non-prod sandbox subscription.
 
 ---
 
@@ -26,7 +26,7 @@ Send to attendees **1 week before** the workshop:
 
 ---
 
-## Module Map
+## Course Map
 
 | # | Level | Title | Mode | Duration |
 |---|-------|-------|------|----------|
@@ -57,7 +57,7 @@ SRE-Agent-L200-Course/
 │   ├── lab-C-first-investigation/     ← First Investigation in Chat
 │   ├── lab-D-deep-investigation/      ← Deep Investigation
 │   └── lab-E-automate/                ← Automate: Connector + Custom Agent + Scheduled Task
-├── slides/                            ← Slide decks (lecture modules)
+├── slides/                            ← Slide decks (lecture sessions)
 ├── handouts/                          ← Pre-flight checklist, glossary card, access-control cheatsheet
 ├── prompts/                           ← Copy-pasteable chat prompts per lab
 ├── sandbox/                           ← IaC for shared sandbox + sample workload
@@ -87,7 +87,7 @@ SRE-Agent-L200-Course/
 2. Verify each attendee's Entra ID account can reach `sre.azure.com`.
 3. Confirm `Microsoft.App` provider is registered in the sandbox subscription.
 4. Set up the workshop Slack/Teams support channel.
-5. Print or share the feedback form referencing each module.
+5. Print or share the feedback form referencing each session.
 6. Walk through the `trainer-notes/timing-script.md` and `trainer-notes/failure-recovery.md`.
 
 ---
@@ -155,7 +155,7 @@ Each lab follows the corresponding page on [sre.azure.com/docs](https://sre.azur
 ## Hard Constraints (for trainers)
 
 1. **Do not expand scope** beyond what's in the curriculum design document.
-2. **Do not change the module order** — later labs depend on earlier ones.
+2. **Do not change the session order** — later labs depend on earlier ones.
 3. **Do not switch attendees to Privileged/Autonomous for Azure infra** — Lab E's Autonomous mode is only for the `SendOutlookEmail` subagent.
 4. **Do not introduce** MCP connectors, custom Python tools, Skills authoring, Response Plans, or incident-platform connections.
 5. **Use non-prod sandbox subscription references only.**
@@ -167,6 +167,6 @@ Each lab follows the corresponding page on [sre.azure.com/docs](https://sre.azur
 
 ## Curriculum Design Document
 
-The file `SREA-Level200.md` at the repository root is the **curriculum design document**. It contains the full module map, learning outcomes, lab outlines, prerequisites, and success metrics used to build this workshop.
+The file `SREA-Level200.md` at the repository root is the **curriculum design document**. It contains the full course map, learning outcomes, lab outlines, prerequisites, and success metrics used to build this workshop.
 
 > ⚠️ **Do NOT distribute `SREA-Level200.md` to attendees.** It is an internal trainer resource only.

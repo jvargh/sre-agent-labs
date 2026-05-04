@@ -1,6 +1,6 @@
 # 📘 SRE Agent — Glossary Reference Card
 
-> **Module 1 Quick Reference** · Keep this card handy during the workshop.
+> **Quick Reference** · Keep this card handy during the workshop.
 
 ---
 

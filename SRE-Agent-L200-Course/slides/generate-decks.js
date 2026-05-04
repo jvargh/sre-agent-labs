@@ -79,7 +79,7 @@ function buildDeck1() {
   pres.author = "Dallas — SRE Agent L200 Workshop";
 
   // S1 Title
-  titleSlide(pres, "Module 1: What & Why —\nSRE Agent Concepts", "Level 100  |  30 minutes");
+  titleSlide(pres, "What & Why —\nSRE Agent Concepts", "Level 100  |  30 minutes");
 
   // S2 The Problem
   {
@@ -197,11 +197,11 @@ function buildDeck2() {
   pres.author = "Dallas — SRE Agent L200 Workshop";
 
   // S1 Title
-  titleSlide(pres, "Module 2: Access Control Model", "Level 100  |  30 minutes");
+  titleSlide(pres, "Access Control Model", "Level 100  |  30 minutes");
 
-  // S2 Why This Module
+  // S2 Why This Section
   {
-    const s = contentSlide(pres, "Why This Module First?");
+    const s = contentSlide(pres, "Why This Section First?");
     s.addShape(pres.ShapeType.rect, { x: 0.6, y: 1.5, w: 9, h: 1.5, fill: { color: C.dark }, rectRadius: 0.05 });
     s.addText("Every later lab depends on understanding who can do what — and when the agent asks for approval.", {
       x: 0.9, y: 1.6, w: 8.4, h: 1.3, fontSize: 20, fontFace: FONT_H, color: C.white, align: "center", valign: "middle",
@@ -348,7 +348,7 @@ function buildDeck3() {
   pres.author = "Dallas — SRE Agent L200 Workshop";
 
   // S1 Title
-  titleSlide(pres, "Module 8: Operate, Audit, Share", "Level 200  |  20 minutes  |  Click-Through Tour");
+  titleSlide(pres, "Operate, Audit, Share", "Level 200  |  20 minutes  |  Click-Through Tour");
 
   // S2 Session Insights
   {
@@ -467,7 +467,7 @@ function buildDeck4() {
   pres.author = "Dallas — SRE Agent L200 Workshop";
 
   // S1 Title
-  titleSlide(pres, "Module 9: Wrap-Up +\nBridge to Level 300", "Level 100  |  15 minutes");
+  titleSlide(pres, "Wrap-Up +\nBridge to Level 300", "Level 100  |  15 minutes");
 
   // S2 Recap — 5 Things
   {

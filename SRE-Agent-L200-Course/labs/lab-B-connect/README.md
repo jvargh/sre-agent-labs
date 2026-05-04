@@ -1,6 +1,6 @@
 # Lab B — Connect Code, Resources, and Knowledge
 
-> **Module 4 (L200) — 45 min hands-on lab**
+> **L200 — 45 min hands-on lab**
 > Maps to docs: [Get Started Steps 2 & 3](https://sre.azure.com/docs/get-started), [Connectors](https://sre.azure.com/docs/concepts/connectors), [Memory & Knowledge](https://sre.azure.com/docs/concepts/memory)
 
 ---

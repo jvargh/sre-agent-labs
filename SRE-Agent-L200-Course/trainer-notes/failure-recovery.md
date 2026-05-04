@@ -7,7 +7,7 @@
 
 ## Failure Mode Table
 
-| # | Symptom | Module | Root Cause | Fix | Time to Resolve |
+| # | Symptom | Lab | Root Cause | Fix | Time to Resolve |
 |---|---------|--------|-----------|-----|-----------------|
 | 1 | `DeploymentNotFound` error during agent creation | Lab A | `Microsoft.App` resource provider is not registered in the subscription | Run `az provider register --namespace "Microsoft.App"` and wait 1–2 minutes, then retry agent creation | 2–3 min |
 | 2 | "Create" button greyed out in agent wizard | Lab A | Attendee lacks Contributor/Owner on the subscription, or selected an unsupported region | Verify RBAC role on the subscription. Switch region to Sweden Central, East US 2, or Australia East | 2–5 min |
@@ -28,8 +28,8 @@
 
 | Situation | Action |
 |-----------|--------|
-| Behind by 1 module | TA pairs with the attendee to fast-track through the missed steps while the group continues |
-| Behind by 2+ modules | TA helps the attendee complete the critical checkpoint (Running agent from Lab A) and joins the group at the current module. Catch up on skipped labs after the workshop |
+| Behind by 1 session | TA pairs with the attendee to fast-track through the missed steps while the group continues |
+| Behind by 2+ sessions | TA helps the attendee complete the critical checkpoint (Running agent from Lab A) and joins the group at the current session. Catch up on skipped labs after the workshop |
 | Cannot complete any lab due to subscription/access issues | Pair the attendee with a neighbor for screen-sharing so they can observe the labs. File an access request for post-workshop follow-up |
 
 ### Portal UI differs from screenshots
@@ -56,7 +56,7 @@
 1. **First line:** TA resolves using this guide (target: <5 min).
 2. **Second line:** Post in the workshop support channel with:
    - Attendee alias
-   - Module number
+   - Session/lab reference
    - Screenshot of the error
    - Steps already attempted
 3. **Third line:** Tag the workshop lead in the support channel. If it's a platform issue (sre.azure.com down, deployment API errors), the lead contacts the SRE Agent product team.

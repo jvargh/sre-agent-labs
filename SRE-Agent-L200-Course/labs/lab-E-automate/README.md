@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Module** | Lab E (L200 Capstone) |
+| **Lab** | Lab E (L200 Capstone) |
 | **Level** | 200 (Hands-on) |
 | **Duration** | 45 minutes |
 | **Docs reference** | [Step 5: Automate Actions](https://sre.azure.com/docs/get-started/automate-actions), [Scheduled Tasks](https://sre.azure.com/docs/capabilities/scheduled-tasks), [Send Notifications](https://sre.azure.com/docs/capabilities/send-notifications) |
@@ -189,7 +189,7 @@ See [troubleshooting.md](troubleshooting.md) for the full table. Quick reference
 
 1. **Optional:** If you want to stop the recurring task, navigate to Builder → Scheduled tasks → `daily-health-<your-alias>` → disable or delete the task.
 2. **Do not** remove the Outlook connector — other attendees may share the same connector.
-3. The subagent and task can remain for the Operate, Audit, Share module review.
+3. The subagent and task can remain for the Operate, Audit, Share section review.
 
 ---
 

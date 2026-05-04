@@ -2,13 +2,13 @@
 
 > **Total duration:** ~4 hours 10 minutes (including one 10-minute break)
 > **Target audience:** 20+ attendees, mixed DevOps and SRE-Ops roles
-> **TA ratio:** Recommend 1 TA per 10 attendees for hands-on modules
+> **TA ratio:** Recommend 1 TA per 10 attendees for hands-on sessions
 
 ---
 
 ## Timeline at a Glance
 
-| Time | Duration | Module | Mode |
+| Time | Duration | Session | Mode |
 |------|----------|--------|------|
 | 0:00 – 0:30 | 30 min | What & Why: SRE Agent Concepts | Lecture |
 | 0:30 – 1:00 | 30 min | Access Control Model | Lecture + diagram |
@@ -23,7 +23,7 @@
 
 ---
 
-## Module-by-Module Script
+## Session-by-Session Script
 
 ### What & Why: SRE Agent Concepts (0:00 – 0:30)
 
@@ -54,7 +54,7 @@
 ### Access Control Model (0:30 – 1:00)
 
 **Opening (0:30 – 0:33)**
-- "This module prevents 80% of 'why didn't this work?' issues during the labs."
+- "This session prevents 80% of 'why didn't this work?' issues during the labs."
 
 **Core Content (0:33 – 0:55)**
 - Whiteboard (or slide) the three-layer model:
@@ -253,7 +253,7 @@
 **Transition (4:43 – 4:45)**
 - "That's the operator toolkit. Now let's wrap up."
 
-**🧑‍🏫 TA Notes:** Passive during this module. Use this time to note any attendees who still need help with Lab E.
+**🧑‍🏫 TA Notes:** Passive during this session. Use this time to note any attendees who still need help with Lab E.
 
 ---
 

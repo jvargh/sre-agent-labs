@@ -24,7 +24,7 @@ These questions measure confidence change — a key success metric for this work
 
 ---
 
-## Section 2: Module Completion
+## Section 2: Session Completion
 
 **Q3.** Which labs did you fully complete? *(Check all that apply.)*
 
@@ -50,11 +50,11 @@ These questions measure confidence change — a key success metric for this work
 
 ---
 
-## Section 3: Module Difficulty
+## Section 3: Session Difficulty
 
-**Q5.** Rate the difficulty of each module you completed.
+**Q5.** Rate the difficulty of each session you completed.
 
-| Module | Too Easy | About Right | Too Difficult | Did Not Attempt |
+| Session | Too Easy | About Right | Too Difficult | Did Not Attempt |
 |--------|----------|-------------|---------------|-----------------|
 | What & Why: Concepts (Lecture) | ☐ | ☐ | ☐ | ☐ |
 | Access Control Model (Lecture) | ☐ | ☐ | ☐ | ☐ |

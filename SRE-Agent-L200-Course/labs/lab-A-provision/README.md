@@ -1,6 +1,6 @@
 # Lab A — Provision Your First Agent
 
-> **Module 3 (L200) — 45 min hands-on lab**
+> **L200 — 45 min hands-on lab**
 > Maps to docs: [Create and Set Up](https://sre.azure.com/docs/get-started/create-and-setup)
 
 ---
@@ -20,7 +20,7 @@ A `contoso-sre-agent` (or attendee-named) agent in `Running` state with App Insi
 | 3 | Region quota | Subscription must allow resource creation in **Sweden Central**, **East US 2**, or **Australia East**. |
 | 4 | Entra ID account | A **work or school** account — personal MSAs cannot authorize OBO. |
 | 5 | Provider registration | `Microsoft.App` provider registered. Run beforehand: `az provider register --namespace "Microsoft.App"` |
-| 6 | Modules 1 & 2 complete | You should understand SRE Agent concepts, user roles, permissions, and run modes from the lecture modules. |
+| 6 | Lecture sections complete | You should understand SRE Agent concepts, user roles, permissions, and run modes from the lecture sessions. |
 
 > **Pre-read (15 min):** [Overview — What is SRE Agent?](https://sre.azure.com/docs/overview) and [Get Started — Your Journey](https://sre.azure.com/docs/get-started).
 

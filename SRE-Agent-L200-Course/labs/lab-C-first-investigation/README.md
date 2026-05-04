@@ -1,6 +1,6 @@
 # Lab C — First Investigation in Chat
 
-> **Module 5 (L200) — 30 min hands-on lab**
+> **L200 — 30 min hands-on lab**
 > Maps to docs: [Diagnose with Azure Observability](https://sre.azure.com/docs/capabilities/diagnose-azure-observability), [Root Cause Analysis](https://sre.azure.com/docs/capabilities/root-cause-analysis)
 
 ---

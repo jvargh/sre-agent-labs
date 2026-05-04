@@ -8,7 +8,7 @@ Welcome to the **SRE Agent Level 200 (L200) labs**. These five labs form a **seq
 
 ## Labs Overview
 
-| Lab | Module | Title | Duration | Link |
+| Lab | Session | Title | Duration | Link |
 |-----|--------|-------|----------|------|
 | **A** | 3 (L200) | Provision Your First Agent | 45 min | [Lab A — Provision](./lab-A-provision/) |
 | **B** | 4 (L200) | Connect Code, Resources, and Knowledge | 45 min | [Lab B — Connect](./lab-B-connect/) |
@@ -51,9 +51,9 @@ Labs **A → B → C → D → E** are **sequential and interdependent**:
 
 ---
 
-## Time Budget by Module
+## Time Budget by Session
 
-| Module | Lab | Duration | Cumulative |
+| Session | Lab | Duration | Cumulative |
 |--------|-----|----------|-----------|
 | 3 | Lab A | 45 min | 45 min |
 | 4 | Lab B | 45 min | 90 min |
