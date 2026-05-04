@@ -1,12 +1,3 @@
----
-lab: 11
-level: 400
-duration_minutes: 90
-track: all
-dependencies: [Lab 1, Lab 2, Lab 3, Lab 4, Lab 5, Lab 6, Lab 7, Lab 8, Lab 9, Lab 10]
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 11 — Enterprise Topology: VNET-Isolated Observability, Cross-Tenant Connectors, Agent Identity Sidecar
 
 ## Learning Outcome

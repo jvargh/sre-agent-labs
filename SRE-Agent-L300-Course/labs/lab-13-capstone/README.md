@@ -1,12 +1,3 @@
----
-lab: 13
-level: 400
-duration_minutes: 90
-track: all
-dependencies: [Lab 1, Lab 2, Lab 3, Lab 4, Lab 5, Lab 6, Lab 7, Lab 8, Lab 9, Lab 10, Lab 11, Lab 12]
-source_md_sha: placeholder
----
-
 # Lab 13 — Capstone: Production Rollout Playbook + Multi-Agent Incident Drill
 
 ## Learning Outcome

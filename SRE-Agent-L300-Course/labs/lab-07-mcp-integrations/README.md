@@ -1,12 +1,3 @@
----
-lab: 7
-level: L300
-duration_minutes: 75
-track: all
-dependencies: [Lab 1, Lab 2, Lab 3, Lab 4, Lab 5, Lab 6]
-source_md_sha: 37bdc62ad9bd
----
-
 # Lab 7 — MCP Integrations II: Partner Connectors, Wildcards, 80-Tool Budget, Plugin Marketplace
 
 ## Learning Outcome

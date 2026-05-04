@@ -1,15 +1,3 @@
----
-lab: 4
-level: 300
-duration_minutes: 75
-track: all
-dependencies:
-  - Lab 1
-  - Lab 2
-  - Lab 3
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 4 — Skills Authoring
 
 > **Format:** Lab (75 min).

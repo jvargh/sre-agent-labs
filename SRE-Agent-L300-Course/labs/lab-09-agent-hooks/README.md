@@ -1,12 +1,3 @@
----
-lab: 9
-level: 400
-duration_minutes: 90
-track: all
-dependencies: [Lab 1, Lab 2, Lab 3, Lab 4, Lab 5, Lab 6, Lab 7, Lab 8]
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 9 — Agent Hooks: Stop + PostToolUse, Prompt vs Command, Model Tiers, Sandbox Limits
 
 > ⚠️ **THE most important L400 Lab for production safety.** Pair with the Lab 1 promotion playbook. Never demonstrate Autonomous mode without the hook stack from this Lab.
