@@ -1,10 +1,10 @@
 # ADX Seed Data — SRE Agent L300 Workshop (D9)
 
-> **Reference:** [SREA-Level300.md §M5](../../SREA-Level300.md#m5--custom-tools-i-kusto--link)
+> **Reference:** Custom tools — Kusto and Link
 
 ## Overview
 
-Pre-seeded Azure Data Explorer (Kusto) database with synthetic telemetry for the workshop's Kusto tools lab (M5). Provides ≥10,000 rows across three tables with 50+ distinct error patterns.
+Pre-seeded Azure Data Explorer (Kusto) database with synthetic telemetry for the workshop's Kusto tools lab (Lab 5). Provides ≥10,000 rows across three tables with 50+ distinct error patterns.
 
 ## Tables
 
@@ -75,7 +75,7 @@ HTTP request telemetry with latency and size metrics.
 - **Total rows:** ≥12,003 (5,000 AppEvents + 3,003 Errors + 4,000 Requests)
 - **Time range:** 30 days trailing from load time
 - **Distinct error patterns:** 55 (exceeds 50 minimum)
-- **NullPointerException in last 24h:** Exactly 3 events (M5 demo requirement)
+- **NullPointerException in last 24h:** Exactly 3 events (Lab 5 demo requirement)
 - **Deterministic:** Seeded RNG (seed=42) ensures identical data across runs
 - **Idempotent:** Re-running the loader skips if ≥10k rows exist (use `-Force` to re-ingest)
 
@@ -123,7 +123,7 @@ Errors
 // Verify distinct error patterns (should be ≥50)
 Errors | distinct ErrorType | count
 
-// M5 demo query: errors from last 24h about NullPointerException
+// Lab 5 demo query: errors from last 24h about NullPointerException
 Errors
 | where Timestamp > ago(24h)
 | where ErrorType has 'NullPointerException'

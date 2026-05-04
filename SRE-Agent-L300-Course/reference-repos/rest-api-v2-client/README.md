@@ -48,7 +48,7 @@ python sre_agent_client.py diff --agent-name incident_triager --yaml-path incide
 
 ## Hook YAML Structure
 
-The YAML bundle includes the M9 hook structure (Stop + PostToolUse, prompt + command):
+The YAML bundle includes the hook structure (Stop + PostToolUse, prompt + command):
 
 ```yaml
 name: incident_triager
@@ -73,5 +73,5 @@ hooks:
 
 - [Agent Hooks API](https://sre.azure.com/docs/tutorials/agent-config/agent-hooks)
 - [Create/Manage Hooks (UI)](https://sre.azure.com/docs/tutorials/agent-config/create-manage-hooks-ui)
-- [M9 Lab Guide](../../labs/module-M9-agent-hooks/README.md)
-- [M12 Lab Guide](../../labs/module-M12-config-as-code/README.md)
+- [Lab 9 Guide](../../labs/lab-09-agent-hooks/README.md)
+- [Lab 12 Guide](../../labs/lab-12-config-as-code/README.md)

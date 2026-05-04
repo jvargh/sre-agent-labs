@@ -62,7 +62,7 @@ $severityMap = @{
     'P4' = @{ pagerduty = 'info';     servicenow = '4'; azuremonitor = '3' }
 }
 
-# Incident scenarios for capstone (M13)
+# Incident scenarios for capstone (Lab 13)
 $scenarios = @(
     @{ Title = "high latency"; Description = "Response times exceeding 5s on /api/v1/orders endpoint. P99 latency at 12s. Possible database connection pool exhaustion." }
     @{ Title = "db corruption"; Description = "Data integrity check failed on orders table. Checksum mismatch detected. Possible write corruption during failover." }
@@ -221,7 +221,7 @@ for ($i = 0; $i -lt $Count; $i++) {
     }
 }
 
-# ---- End-to-end report for capstone scorer (M13) ----
+# ---- End-to-end report for capstone scorer (Lab 13) ----
 Write-Host "`n============================================================"
 Write-Host "END-TO-END INCIDENT REPORT"
 Write-Host "============================================================"

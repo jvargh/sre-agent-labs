@@ -1,6 +1,6 @@
 ---
 # Hook A — Stop hook, prompt type (completeness check)
-# From SREA-Level300.md §M9, lines 327–339
+# Agent hooks reference
 # 
 # Purpose: Validate that the agent's response includes both a root cause statement AND a recommended action.
 # Event: Stop (validates response completeness; rejects up to maxRejections times)

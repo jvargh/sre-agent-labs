@@ -168,7 +168,7 @@ for ($i = 0; $i -lt 3000; $i++) {
     })
 }
 
-# Inject exactly 3 NullPointerException events in the last 24 hours (M5 demo requirement)
+# Inject exactly 3 NullPointerException events in the last 24 hours (Lab 5 demo requirement)
 for ($npe = 0; $npe -lt 3; $npe++) {
     $hoursAgo = $rng.Next(1, 23)
     $ts = $now.AddHours(-$hoursAgo).AddMinutes(-$rng.Next(0, 60))
@@ -176,7 +176,7 @@ for ($npe = 0; $npe -lt 3; $npe++) {
         Timestamp      = $ts.ToString('yyyy-MM-ddTHH:mm:ss.fffZ')
         ErrorId        = "err-npe-$($npe.ToString('D3'))"
         ErrorType      = 'NullPointerException'
-        ErrorMessage   = "NullPointerException: Reference to null object in db-proxy request handler (injected for M5 demo)"
+        ErrorMessage   = "NullPointerException: Reference to null object in db-proxy request handler (injected for Lab 5 demo)"
         StackTrace     = "at Service.DataAccess.NullPointerHandler()`n  at Middleware.Execute()`n  at Host.ProcessRequest()"
         ServiceName    = 'db-proxy'
         Component      = 'DataAccess'

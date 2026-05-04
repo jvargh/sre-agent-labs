@@ -39,7 +39,7 @@ All responses are confidential. Thank you for your time!
 | Creating and validating hooks (Stop + PostToolUse) for production safety | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Authoring Kusto tools + Python tools for custom logic | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Wiring MCP connectors to extend agent capabilities (80-tool budget awareness) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Running the 13-module capstone drill end-to-end | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Running the 13-lab capstone drill end-to-end | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Landing a Bicep/Terraform agent-as-code PR to production | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Auditing agent actions + correlating token spend to cost targets | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 
@@ -54,7 +54,7 @@ All responses are confidential. Thank you for your time!
 | Creating and validating hooks (Stop + PostToolUse) for production safety | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Authoring Kusto tools + Python tools for custom logic | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Wiring MCP connectors to extend agent capabilities (80-tool budget awareness) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Running the 13-module capstone drill end-to-end | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Running the 13-lab capstone drill end-to-end | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Landing a Bicep/Terraform agent-as-code PR to production | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Auditing agent actions + correlating token spend to cost targets | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 
@@ -62,25 +62,25 @@ All responses are confidential. Thank you for your time!
 
 ---
 
-## Part 2: Per-Module Satisfaction
+## Part 2: Per-Session Satisfaction
 
-**How satisfied were you with each module?**
+**How satisfied were you with each session?**
 
-| Module | Content Clarity | Lab Hands-On | Pacing | Overall | Would Recommend |
+| Session | Content Clarity | Lab Hands-On | Pacing | Overall | Would Recommend |
 |--------|-----------------|--------------|--------|---------|-----------------|
-| M1: Promotion playbook | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M2: Incident platform connection | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M3: Response plans + deep investigation | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M4: Skills authoring | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M5: Custom Kusto + Link tools | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M6: Custom agents in YAML | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M7: MCP integrations | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M8: Python tools (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M9: Agent hooks (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M10: Audit + FinOps (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M11: Enterprise topology (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M12: Configuration as code (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
-| M13: Capstone drill (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 1: Promotion playbook | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 2: Incident platform connection | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 3: Response plans + deep investigation | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 4: Skills authoring | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 5: Custom Kusto + Link tools | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 6: Custom agents in YAML | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 7: MCP integrations | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 8: Python tools (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 9: Agent hooks (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 10: Audit + FinOps (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 11: Enterprise topology (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 12: Configuration as code (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
+| 13: Capstone drill (L400) | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | 1☐ 2☐ 3☐ 4☐ 5☐ | Yes☐ No☐ |
 
 ---
 
@@ -141,12 +141,12 @@ All responses are confidential. Thank you for your time!
 [Free text]
 `
 
-### Did you skip or defer any modules (e.g., M11 due to unavailable Entra admin)? If so, which and why?
+### Did you skip or defer any sessions (e.g., Lab 11 due to unavailable Entra admin)? If so, which and why?
 `
 [Free text]
 `
 
-### Plan to attempt M11 (cross-tenant) lab post-workshop with your own Entra admin?
+### Plan to attempt Lab 11 (cross-tenant) lab post-workshop with your own Entra admin?
 ☐ Yes, will schedule   ☐ No, not applicable   ☐ Already completed   ☐ Undecided
 
 ### Will you land an agent-as-code PR at your organization within 2 weeks?

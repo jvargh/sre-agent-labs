@@ -40,7 +40,7 @@ This server implements the [Model Context Protocol](https://modelcontextprotocol
 | `list_recent_deployments` | Lists deployments in the last N hours |
 | `get_runbook_link` | Returns a direct link to the runbook for a service |
 
-## Usage in M7
+## Usage in Lab 7
 
 1. Build and publish the package (or use locally via `npx --prefix .`)
 2. Add as an stdio connector in the SRE Agent portal
@@ -51,4 +51,4 @@ This server implements the [Model Context Protocol](https://modelcontextprotocol
 
 - [MCP Connectors & Tools](https://sre.azure.com/docs/capabilities/mcp-connectors)
 - [Setup MCP Connector](https://sre.azure.com/docs/tutorials/connectors/setup-mcp-connector)
-- [M7 Lab Guide](../../labs/module-M7-mcp-integrations/README.md)
+- [Lab 7 Guide](../../labs/lab-07-mcp-integrations/README.md)

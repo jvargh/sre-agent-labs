@@ -13,7 +13,7 @@ srea_version: srea-l300-v1.0.0
 ## The 10 Steps
 
 ### 1. Land agent IaC PR
-Deploy the agent resource (Bicep/Terraform) from version control. Include UAMI, App Insights, Log Analytics, role assignments per your M1 decision matrix. **Review board:** Must see that UAMI scope matches your team's approval-pool definitions.
+Deploy the agent resource (Bicep/Terraform) from version control. Include UAMI, App Insights, Log Analytics, role assignments per your decision matrix. **Review board:** Must see that UAMI scope matches your team's approval-pool definitions.
 
 ### 2. Delete the quickstart response plan
 In the Builder UI, go to Incident response plans and delete the auto-generated default plan. This prevents the L300 double-route bug. You now own all routing logic.
@@ -34,7 +34,7 @@ Commit YAML to your repo.
 ### 5. Add Kusto + Python tools
 Create one Kusto tool (parameterized query on your ADX cluster) + one Python tool (HTTP wrapper to an internal API or Azure Function). Attach both to your specialists. Add a screenshot of each tool's portal test to your PR.
 
-### 6. **Wire hooks (M9 types) BEFORE flipping any response plan to Autonomous**
+### 6. **Wire hooks BEFORE flipping any response plan to Autonomous**
 Install at minimum:
 - **Stop hook (prompt):** Validate that responses include root cause + recommended action.
 - **PostToolUse hook (command):** Block dangerous patterns (m -rf, sudo, z group delete).
@@ -92,7 +92,7 @@ If at any step you discover a critical issue (e.g., hooks blocking legitimate tr
 
 ## Contingencies
 
-**What if my Entra ID admin is unavailable for cross-tenant connectors (M11)?**  
+**What if my Entra ID admin is unavailable for cross-tenant connectors (Lab 11)?**  
 → Defer to async post-workshop. Reference capabilities/cross-tenant-access docs. You can still land step 1–9 with single-tenant connectors.
 
 **What if token spend exceeds budget in shadow mode?**  
@@ -114,5 +114,5 @@ If at any step you discover a critical issue (e.g., hooks blocking legitimate tr
 ---
 
 **Version:** srea-l300-v1.0.0  
-**Reference:** SREA-Level300.md §M13  
+**Reference:** Lab 13 — Capstone Production Rollout Playbook  
 **Last reviewed:** TBD

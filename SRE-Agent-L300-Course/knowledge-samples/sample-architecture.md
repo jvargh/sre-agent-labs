@@ -1,6 +1,6 @@
 # Contoso Sample App — Reference Architecture
 
-**Purpose:** This document describes the architecture of the `contoso-sample-app`, the shared workload used throughout the L300/400 workshop. Used as a knowledge source in **M4 (Skills Authoring)** and as context for all custom agents.
+**Purpose:** This document describes the architecture of the `contoso-sample-app`, the shared workload used throughout the L300/400 workshop. Used as a knowledge source in **Lab 4 (Skills Authoring)** and as context for all custom agents.
 
 **Audience:** SRE operators, platform engineers, custom agent authors.
 
@@ -397,15 +397,15 @@ Health check: Application Insights error rate < 0.5%?
 
 ## 10. References & Related Documents
 
-- **Deployment playbook:** See `deployment-runbook.md` (M4 skill attachment).
-- **Restart procedure:** See `sample-runbook-restart-containerapp.md` (M4 skill content).
+- **Deployment playbook:** See `deployment-runbook.md` (Lab 4 skill attachment).
+- **Restart procedure:** See `sample-runbook-restart-containerapp.md` (Lab 4 skill content).
 - **Security hardening:** See `security-baseline.md` (compliance checklist).
 - **Capacity planning:** See `capacity-planning.xlsx` (cost + scaling model).
-- **Incident response:** See `incident-runbooks/` directory (M3 response plan templates).
+- **Incident response:** See `incident-runbooks/` directory (Lab 3 response plan templates).
 
 ---
 
-## Knowledge Source Configuration (M4 Upload)
+## Knowledge Source Configuration (Lab 4 Upload)
 
 **File Name:** `sample-architecture.md`  
 **Upload as:** Knowledge Source (not Skill)  

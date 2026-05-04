@@ -1,6 +1,6 @@
 # ServiceNow PDI Setup — SRE Agent L300 Workshop (D2 Track B)
 
-> **Reference:** [SREA-Level300.md §M2 Track B](../../../SREA-Level300.md#m2--incident-platform-connection)
+> **Reference:** Lab 2 — Incident Platform Connection (Track B)
 
 ## Overview
 

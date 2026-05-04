@@ -1,6 +1,6 @@
 # Azure Monitor Setup — SRE Agent L300 Workshop (D2 Track C)
 
-> **Reference:** [SREA-Level300.md §M2 Track C](../../../SREA-Level300.md#m2--incident-platform-connection)
+> **Reference:** Lab 2 — Incident Platform Connection (Track C)
 
 ## Overview
 
@@ -87,4 +87,4 @@ The alert thresholds are intentionally low to trigger during the lab:
 - CPU alert: 500m cores (half a core) — the sample app idles well below this
 - Error alert: 5 errors in 5 minutes — use D11 synthetic generator to trigger
 
-For the M3 lab, use the D11 incident generator to create `[TEST]` prefixed alerts.
+For the Lab 3 exercise, use the D11 incident generator to create `[TEST]` prefixed alerts.

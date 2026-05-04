@@ -4,7 +4,7 @@ Sample `SKILL.md` files for the SRE Agent with a grading rubric — good and int
 
 ## Purpose
 
-Used in M4 (Skills Authoring) as graded exercises. Attendees evaluate these examples to build intuition for effective skill descriptions.
+Used in Lab 4 (Skills Authoring) as graded exercises. Attendees evaluate these examples to build intuition for effective skill descriptions.
 
 ## Grading Rubric
 
@@ -25,7 +25,7 @@ bad-examples/
   vague-skill.md                # tag: bad — no triggers, vague, unscoped
 ```
 
-## Usage in M4
+## Usage in Lab 4
 
 1. Attendees read both examples.
 2. Apply the rubric to score each.
@@ -38,4 +38,4 @@ bad-examples/
 
 - [Skills Concepts](https://sre.azure.com/docs/concepts/skills)
 - [Skills Tutorials](https://sre.azure.com/docs/tutorials/skills/)
-- [M4 Lab Guide](../../labs/module-M4-skills-authoring/README.md)
+- [Lab 4 Guide](../../labs/lab-04-skills-authoring/README.md)

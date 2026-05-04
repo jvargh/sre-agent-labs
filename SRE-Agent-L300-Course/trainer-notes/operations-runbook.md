@@ -20,7 +20,7 @@ created_at: 2026-05-03T15:51:18Z
   - [ ] Incident platform chosen (PagerDuty / ServiceNow / Azure Monitor)
   - [ ] Two subscriptions provisioned
   - [ ] ADX cluster URL confirmed
-  - [ ] Entra admin contact name provided (M11 requirement)
+  - [ ] Entra admin contact name provided (Lab 11 requirement)
   - [ ] Budget cap acknowledged (USD 50/day)
 
 - [ ] **Sandboxes staged.** All 3 tracks have:
@@ -30,26 +30,26 @@ created_at: 2026-05-03T15:51:18Z
 
 - [ ] **Pre-seeded ADX cluster:**
   - [ ] Tables created: `AppEvents`, `Errors`, `Requests`
-  - [ ] ≥10k rows loaded (incl. 3 NullPointerException events in last 24h for M5 demo)
+  - [ ] ≥10k rows loaded (incl. 3 NullPointerException events in last 24h for Lab 5 demo)
   - [ ] Loader is idempotent (safe to re-run)
-  - [ ] AllDatabasesViewer role grants ready for M5
+  - [ ] AllDatabasesViewer role grants ready for Lab 5
 
 - [ ] **Synthetic-incident generator tested:**
   - [ ] `./synthetic-incidents.sh --platform pagerduty --count 3 --prefix [TEST]` fires cleanly
   - [ ] Incidents appear in each platform within 60 s
-  - [ ] Incident IDs logged for M13 capstone scoring
+  - [ ] Incident IDs logged for Lab 13 capstone scoring
 
 - [ ] **Slides + lab guides:**
   - [ ] Screenshots regenerated against current portal UI (drift check)
-  - [ ] M1 decision matrix printed (handout)
-  - [ ] M9 hook YAML examples syntax-checked
-  - [ ] M13 capstone rubric reviewed
+  - [ ] Lab 1 decision matrix printed (handout)
+  - [ ] Lab 9 hook YAML examples syntax-checked
+  - [ ] Lab 13 capstone rubric reviewed
 
 - [ ] **Trainer dry run (internal, 1–2 people, 1 track):**
   - [ ] Provision one sandbox via `./sandbox/provision.sh` — completes in <12 min
-  - [ ] M1 exercise: complete decision matrix for a sample service
-  - [ ] M2: connect incident platform, delete quickstart plan, verify heartbeat green
-  - [ ] M3 (abbreviated): create 1 custom agent + 1 response plan, fire 1 synthetic incident
+  - [ ] Lab 1 exercise: complete decision matrix for a sample service
+  - [ ] Lab 2: connect incident platform, delete quickstart plan, verify heartbeat green
+  - [ ] Lab 3 (abbreviated): create 1 custom agent + 1 response plan, fire 1 synthetic incident
   - [ ] Log any friction → document in FAQ / fallback section below
 
 ### T-1 day: Final prep
@@ -95,7 +95,7 @@ created_at: 2026-05-03T15:51:18Z
   - [ ] `#srea-l300-pagerduty`, `#srea-l300-servicenow`, `#srea-l300-azure-monitor`
   - [ ] `#srea-l300-announcements` (trainer broadcasts)
 
-- [ ] **First checkpoint (9:15 AM, 15 min into M1):**
+- [ ] **First checkpoint (9:15 AM, 15 min into Lab 1):**
   - [ ] All attendees present + on camera
   - [ ] No provisioning errors in the logs
   - [ ] "OK to proceed" from each track lead
@@ -107,9 +107,9 @@ created_at: 2026-05-03T15:51:18Z
   - [ ] Cost-cap watcher logs clean (no false alarms)
 
 - [ ] **Capstone artifacts collected:**
-  - [ ] M13 rubric scored for all attendees
-  - [ ] Audit workbooks exported (M10)
-  - [ ] Photos/screenshots of whiteboard exercises (M1, M11)
+  - [ ] Lab 13 rubric scored for all attendees
+  - [ ] Audit workbooks exported (Lab 10)
+  - [ ] Photos/screenshots of whiteboard exercises (Lab 1, Lab 11)
 
 - [ ] **Attendee feedback forms distributed:**
   - [ ] Post-workshop survey link (See `feedback/post-workshop-survey.md`)
@@ -201,7 +201,7 @@ Contact for overages: <FinOps email>
    - Name: `sample-app-prod`
    - Type: Incidents
    - Escalation policy: (create) `L3-on-call` → assign default on-call
-4. Create an **Incident Type** for each M3 test case:
+4. Create an **Incident Type** for each Lab 3 test case:
    - `high-latency` (P3/Sev 3)
    - `db-corruption` (P1/Sev 1)
    - `api-500s` (P2/Sev 2)
@@ -229,7 +229,7 @@ Contact for overages: <FinOps email>
    - Admin → Groups → New
    - Name: `SRE-Incident-Response`
    - Members: service-account user + trainer
-6. Create **Incident types** (Incident table → new records with category = M3 test cases)
+6. Create **Incident types** (Incident table → new records with category = Lab 3 test cases)
 7. **Grant permissions:**
    - Service account: can read/write `incident` table, can read CMDB CI
 
@@ -238,11 +238,11 @@ Contact for overages: <FinOps email>
 1. Provision a **sample workload RG** in a non-prod subscription (if not already running):
    - Container app or App Service with sample HTTP endpoint
    - Application Insights instrumentation enabled
-   - Metric alert on latency / error rate (configure for M2 lab)
+   - Metric alert on latency / error rate (configure for Lab 2 lab)
 2. Create an **Alert Rule**:
    - Metric: Requests / Failed Requests / Response Time
    - Threshold: 50 th percentile > 2 sec (or ≥1 error/min)
-   - Action group: [to be set by attendee in M2]
+   - Action group: [to be set by attendee in Lab 2]
    - Alert rule name: `sample-app-high-latency-metric`
 3. Create a **Log Search Alert** (optional, for depth):
    - Workspace: agent's Log Analytics
@@ -308,7 +308,7 @@ Contact for overages: <FinOps email>
    - 3 NullPointerException events in last 24h
    - Deterministic ordering (seed = cohort date)
 
-5. **Grant AllDatabasesViewer role** to each attendee's UAMI (after M1 provisioning):
+5. **Grant AllDatabasesViewer role** to each attendee's UAMI (after Lab 1 provisioning):
    ```kql
    .add cluster AllDatabasesViewer ('aadapp=<ManagedIdentityClientId>;<TenantId>')
    ```
@@ -332,7 +332,7 @@ A:
 A:
 1. Agent still starting (first time, takes 2–3 min).
 2. NSG rule blocking traffic? Check `az network nsg rule list --resource-group <rg>`.
-3. Private endpoint issue (if M11 early)? Verify `--public-ip-address Enabled` in the agent resource.
+3. Private endpoint issue (if Lab 11 early)? Verify `--public-ip-address Enabled` in the agent resource.
 
 **Q: Attendee can't see their incident in Builder → Incidents page.**
 
@@ -341,15 +341,15 @@ A:
 2. Incident platform is not firing incidents? Check the platform's activity log / webhook delivery.
 3. Is the agent's UAMI assigned the right roles on the incident platform's webhook receiver? (platform-dependent)
 
-### Module-specific
+### Lab-specific
 
-**M1 — Promotion playbook**
+**Lab 1 — Promotion playbook**
 
 **Q: "I'm confused about when to use Review vs Autonomous."**
 
-A: Refer attendee to [SREA-Level300.md § M1](../SREA-Level300.md#m1--promotion-playbook-privileged--autonomous-safely-l300-45-min). Show the decision matrix (printed handout). The rule: **Review is default; justify every move away from it.** If the custom agent calls a write tool (e.g., `az deployment create`), stay in Review unless an M9 hook guards it.
+A: Refer attendee to the Lab 1 guide. Show the decision matrix (printed handout). The rule: **Review is default; justify every move away from it.** If the custom agent calls a write tool (e.g., `az deployment create`), stay in Review unless an Lab 9 hook guards it.
 
-**M2 — Incident platform connection**
+**Lab 2 — Incident platform connection**
 
 **Q: "ServiceNow PDI provisioning is taking forever."**
 
@@ -363,19 +363,19 @@ A: Generate a new trial for the attendee using a different email alias (srea-l30
 
 A: Most likely, the API token lacks the right scopes. Re-generate it with `incidents:write + services:read`. For ServiceNow, ensure the service-account user can write to the `incident` table.
 
-**M3 — Response Plans**
+**Lab 3 — Response Plans**
 
 **Q: "My response plan fired twice — incident was processed by two handlers."**
 
 A: You have two overlapping plans (e.g., both match P1 on the same service). Click "Unified grid view" in Agent Canvas → Incident response plans → sort by `Service + Severity` → remove the duplicate.
 
-**M4 — Skills**
+**Lab 4 — Skills**
 
 **Q: "My skill never loads — the agent ignores it."**
 
 A: Skill description doesn't include trigger phrases. The agent matches natural language to the description field to decide whether to load the skill. Add keywords: "troubleshooting", "error", "diagnosis", etc.
 
-**M5 — Kusto tools**
+**Lab 5 — Kusto tools**
 
 **Q: "AllDatabasesViewer grant is failing."**
 
@@ -385,7 +385,7 @@ A: Most likely, the UAMI's tenant ID and client ID are swapped. Double-check wit
 
 A: Likely a typo in the parameter substitution. Verify the query includes `##timeRange##` and `##searchPattern##` placeholders (exact syntax, double-hash). The tool replaces them with the attendee-supplied values.
 
-**M9 — Agent Hooks**
+**Lab 9 — Agent Hooks**
 
 **Q: "My Stop hook keeps rejecting responses; the agent enters a loop."**
 
@@ -395,13 +395,13 @@ A: Set `maxRejections: 3` (limit retries). If the agent still loops, check the p
 
 A: Script is too slow or stuck. Timeout default is 120 s; max is 900 s. Check for infinite loops, missing error handling, or deadlocks. Set `timeout: 30` for quick tests.
 
-**M11 — Enterprise topology**
+**Lab 11 — Enterprise topology**
 
 **Q: "Entra admin is unavailable for the MI federation consent step."**
 
-A: **Use the M11 fallback** (see §3 below). Switch attendee to lecture-only mode for M11; skip the lab. Cover the conceptual material (VNET topology, cross-tenant connectors) verbally. Attendee can attempt the lab post-workshop with their own Entra admin.
+A: **Use the Lab 11 fallback** (see §3 below). Switch attendee to lecture-only mode for Lab 11; skip the lab. Cover the conceptual material (VNET topology, cross-tenant connectors) verbally. Attendee can attempt the lab post-workshop with their own Entra admin.
 
-**M12 — Configuration as code**
+**Lab 12 — Configuration as code**
 
 **Q: "My Bicep template syntax is wrong."**
 
@@ -411,7 +411,7 @@ A: Run `az bicep build --file bicep-skeleton.bicep` locally to validate. Check t
 
 A: Agent's UAMI must have consent for the agent resource. Ensure the agent was provisioned with the UAMI already, and the UAMI has `Managed Identity Operator` on the agent resource.
 
-**M13 — Capstone**
+**Lab 13 — Capstone**
 
 **Q: "Only 1 of 3 test incidents fired."**
 
@@ -448,7 +448,7 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
 │  ├─ Primary: Trainer (run teardown.sh immediately)
 │  └─ Secondary: FinOps team (cost cap exceptions) + Azure SRE Agent team (infrastructure)
 │
-└─ Entra ID / MI federation / consent issues (M11)
+└─ Entra ID / MI federation / consent issues (Lab 11)
    ├─ Primary: Named Entra admin contact (prerequisite #8)
    │  (Have their name + email before workshop starts)
    └─ Secondary: Identity & Access Governance team (internal)
@@ -462,7 +462,7 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
 | Track lead — PagerDuty | | | | |
 | Track lead — ServiceNow | | | | |
 | Track lead — Azure Monitor | | | | |
-| Entra admin | | | | (M11 requirement) |
+| Entra admin | | | | (Lab 11 requirement) |
 | FinOps escalation | | | | (cost cap) |
 | SRE Agent product team | | | | (sandbox issues) |
 
@@ -470,13 +470,13 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
 
 ## 6. Fallback Strategies
 
-### M11 fallback: Entra admin unavailable
+### Lab 11 fallback: Entra admin unavailable
 
-**Trigger:** Named Entra admin (prerequisite #8) is not reachable during M11 (around 2–3 PM Day 2).
+**Trigger:** Named Entra admin (prerequisite #8) is not reachable during Lab 11 (around 2–3 PM Day 2).
 
 **Action:**
 
-1. **Convert M11 to lecture-only** (60 min):
+1. **Convert Lab 11 to lecture-only** (60 min):
    - Trainer delivers the 30-min conceptual lecture (VNET, cross-tenant, Agent Identity sidecar).
    - Show slides + architecture diagrams.
    - Q&A: let attendees ask about their real-world enterprise topology.
@@ -487,16 +487,16 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
    - Timeline: complete within 2 weeks; share results in a follow-up sync.
 
 3. **Document in the feedback survey:**
-   - Ask attendee to rate M11 lecture usefulness (1–5).
+   - Ask attendee to rate Lab 11 lecture usefulness (1–5).
    - Ask if they plan to attempt the lab post-workshop.
 
-### M5 fallback: ADX cluster data load fails
+### Lab 5 fallback: ADX cluster data load fails
 
-**Trigger:** Loader script errors or ADX cluster is not ready by M5 lab time.
+**Trigger:** Loader script errors or ADX cluster is not ready by Lab 5 lab time.
 
 **Action:**
 
-1. **Pause M5 (5 min).** Trainer diagnostic:
+1. **Pause Lab 5 (5 min).** Trainer diagnostic:
    - Check ADX cluster health: `az kusto cluster show --name <cluster-name>`
    - Re-run the loader: `python3 load-sample-data.py --verbose`
 
@@ -510,9 +510,9 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
 4. **Option C — Defer to a shorter lab variant:**
    - Show a **pre-recorded demo** of the Kusto tool creation + invocation (5 min).
    - Attendee builds the tool in the Agent Canvas (no live data test).
-   - Mark M5 as "partial completion" in the capstone rubric.
+   - Mark Lab 5 as "partial completion" in the capstone rubric.
 
-### Cost runaway (M12/M13)
+### Cost runaway (Lab 12/Lab 13)
 
 **Trigger:** Cost-cap watcher fires at USD 40 (80%) or USD 50 (100%) during workshop.
 
@@ -526,8 +526,8 @@ A: Trainer's synthetic-incident generator may have failed. Check its logs: `./sy
 2. **At USD 50 alert (100%):**
    - Logic App / Function triggers **automatic teardown** of the attendee's RG.
    - All resources deleted; sandbox is down.
-   - **Attendee is kicked from M13 capstone** (no sandbox to test).
-   - Trainer reviews attendee's prior work (M1–M12) for partial credit.
+   - **Attendee is kicked from Lab 13 capstone** (no sandbox to test).
+   - Trainer reviews attendee's prior work (Labs 1–12) for partial credit.
    - **Root-cause analysis post-workshop:** why did this attendee's sandbox exceed budget?
 
 3. **Prevention post-mortem:**
@@ -560,13 +560,13 @@ for handle in <list of attendee handles>; do
 done
 ```
 
-### Heartbeat checks (M2 onwards)
+### Heartbeat checks (Lab 2 onwards)
 
 - **Every 30 min:** trainer spot-checks one random attendee's agent:
   - `curl -H "Authorization: Bearer <token>" <agent-url>/healthz` → expect 200
   - If not: escalate to platform team; trigger sandbox rebuild
 
-### Incident firing verification (M3, M13)
+### Incident firing verification (Lab 3, Lab 13)
 
 - Trainer monitors incident-platform logs:
   - PagerDuty: Activities page for `[TEST]` incidents
@@ -600,7 +600,7 @@ done
 
 - [ ] Update this runbook:
   - Add new FAQ entries.
-  - Revise timing if modules consistently ran over.
+  - Revise timing if sessions consistently ran over.
 
 ---
 

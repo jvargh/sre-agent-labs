@@ -2,7 +2,7 @@
 // ADX Seed — Table Schemas for SRE Agent L300 Workshop (D9)
 // Database: SREWorkshopDB
 // Tables: AppEvents, Errors, Requests
-// Reference: SREA-Level300.md §M5
+// Reference: Lab 5
 // =============================================================================
 
 // --- AppEvents: application-level telemetry events ---

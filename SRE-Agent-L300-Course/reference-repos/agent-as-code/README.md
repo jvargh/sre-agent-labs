@@ -21,7 +21,7 @@ Both variants create:
 | User-Assigned Managed Identity (UAMI) | `Microsoft.ManagedIdentity/userAssignedIdentities` |
 | Application Insights | `Microsoft.Insights/components` |
 | Log Analytics Workspace | `Microsoft.OperationalInsights/workspaces` |
-| Role Assignments | Per the M1 promotion-playbook matrix |
+| Role Assignments | Per the promotion-playbook matrix |
 
 ## Parameters
 
@@ -57,4 +57,4 @@ The `modelProvider` parameter defaults to `Anthropic`. For EUDB compliance, set 
 
 - [REST API v2](https://sre.azure.com/docs/tutorials/agent-config/agent-hooks)
 - [Agent Identity](https://sre.azure.com/docs/concepts/agent-identity)
-- [M12 Lab Guide](../../labs/module-M12-config-as-code/README.md)
+- [Lab 12 Guide](../../labs/lab-12-config-as-code/README.md)

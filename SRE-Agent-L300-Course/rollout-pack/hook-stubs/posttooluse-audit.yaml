@@ -1,6 +1,6 @@
 ---
 # Hook C — PostToolUse hook, command type (audit every tool call + inject audit context)
-# From SREA-Level300.md §M9, line 362 reference
+# Agent hooks reference
 #
 # Purpose: Log every tool call to stderr (visible in the agent's audit thread) and inject audit context into the response.
 # Event: PostToolUse (fires AFTER a tool is called)

@@ -1,6 +1,6 @@
 # PagerDuty Trial Setup — SRE Agent L300 Workshop (D2 Track A)
 
-> **Reference:** [SREA-Level300.md §M2 Track A](../../../SREA-Level300.md#m2--incident-platform-connection)
+> **Reference:** Lab 2 — Incident Platform Connection (Track A)
 
 ## Overview
 

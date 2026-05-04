@@ -1,10 +1,10 @@
 # Synthetic Incident Generator — SRE Agent L300 Workshop (D11)
 
-> **Reference:** [SREA-Level300.md §M13](../../SREA-Level300.md#m13--capstone-production-rollout-playbook--multi-agent-incident-drill)
+> **Reference:** Capstone production rollout playbook and multi-agent incident drill
 
 ## Overview
 
-Generates synthetic incidents across PagerDuty, ServiceNow, or Azure Monitor for the M3 lab exercises and M13 capstone drill. All incidents use `[TEST]` prefix by default. Emits a JSON report with incident IDs and timestamps for the capstone scorer.
+Generates synthetic incidents across PagerDuty, ServiceNow, or Azure Monitor for the Lab 3 exercises and capstone drill. All incidents use `[TEST]` prefix by default. Emits a JSON report with incident IDs and timestamps for the capstone scorer.
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ Generates synthetic incidents across PagerDuty, ServiceNow, or Azure Monitor for
 | `--keyvault` | No* | — | Key Vault name (* required for PagerDuty/ServiceNow) |
 | `--attendee` | No* | — | Attendee handle (* required for credential lookup) |
 
-## Capstone Drill (M13)
+## Capstone Drill (Lab 13)
 
 For the capstone, fire three incidents back-to-back:
 
@@ -112,7 +112,7 @@ Each run produces a JSON report file (`incident-report-<timestamp>.json`) with:
 ]
 ```
 
-This report is consumed by the M13 capstone scoring sheet (D13) to verify end-to-end incident handling.
+This report is consumed by the capstone scoring sheet (D13) to verify end-to-end incident handling.
 
 ## Credential Security
 

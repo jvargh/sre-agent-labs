@@ -22,14 +22,14 @@ Send this checklist to attendees **1 week before the workshop**.
 | # | Item | Notes |
 |---|------|-------|
 | 1 | L200 completion | Confirmed by trainer — no exceptions. |
-| 2 | Two non-prod sandbox subscriptions | One for the agent, one to simulate a "remote" tenant for the cross-tenant lab (M11). |
+| 2 | Two non-prod sandbox subscriptions | One for the agent, one to simulate a "remote" tenant for the cross-tenant lab (Lab 11). |
 | 3 | An incident platform sandbox | Choose **one**: free PagerDuty trial **or** ServiceNow PDI **or** Azure Monitor alert rule wired to a sample workload. Declare in registration form. |
-| 4 | An ADX (Kusto) cluster | Free tier is fine; needs ≥10k rows for the Kusto-tools lab (M5). |
+| 4 | An ADX (Kusto) cluster | Free tier is fine; needs ≥10k rows for the Kusto-tools lab (Lab 5). |
 | 5 | A reachable external MCP endpoint | Datadog trial, Splunk free tier, or self-hosted demo MCP server in workshop's shared sandbox. Trainer provides credentials. |
 | 6 | Local toolchain | `az` CLI ≥latest, `kubectl`, Python 3.12, Node 20, .NET 9, `jq`, VS Code with SRE Agent MCP extension. |
 | 7 | Repo write access | Attendee owns a repo where they will land agent IaC PR and `SKILL.md` PR. |
-| 8 | Entra ID admin contact | Named individual reachable during M11 to grant MI federation / app-registration consent. Without this, M11 stops. |
-| 9 | Budget owner sign-off | Cost cap per attendee per day (recommended: USD 50). M12 references it. |
+| 8 | Entra ID admin contact | Named individual reachable during Lab 11 to grant MI federation / app-registration consent. Without this, Lab 11 stops. |
+| 9 | Budget owner sign-off | Cost cap per attendee per day (recommended: USD 50). Lab 12 references it. |
 
 ### Pre-read (45 min, mandatory)
 
@@ -40,25 +40,25 @@ Attendees must complete before Day 1:
 - [Capabilities → Agent Hooks](https://sre.azure.com/docs/capabilities/agent-hooks)
 - [Capabilities → Audit Agent Actions](https://sre.azure.com/docs/capabilities/audit-agent-actions)
 
-## Module Map
+## Course Map
 
 | # | Level | Title | Mode | Duration | Track |
 |----|-------|-------|------|----------|-------|
-| M1 | 300 | [Promotion playbook: Privileged + Autonomous safely](labs/module-M1-promotion-playbook/) | Lecture + Exercise | 45 min | All |
-| M2 | 300 | [Incident platform connection (PagerDuty / ServiceNow / Azure Monitor)](labs/module-M2-incident-platform/) | Lab | 60 min | All |
-| M3 | 300 | [Response Plans: severity routing, custom-agent dispatch, deep-investigation Mode 2](labs/module-M3-response-plans/) | Lab | 90 min | All |
-| M4 | 300 | [Skills authoring (`SKILL.md` + tool attachments + Agent Playground)](labs/module-M4-skills-authoring/) | Lab | 75 min | All |
-| M5 | 300 | [Custom Tools I — Kusto (parameterized) and Link tools](labs/module-M5-kusto-link-tools/) | Lab | 60 min | All |
-| M6 | 300 | [Custom Agents in YAML — handoff chains, `allowed_skills`, multi-specialist patterns](labs/module-M6-custom-agents-yaml/) | Lab | 90 min | All |
-| M7 | 300 | [MCP integrations II — partner connectors, wildcards, 80-tool budget, Plugin Marketplace](labs/module-M7-mcp-integrations/) | Lab | 75 min | All |
-| M8 | 400 | [Custom Tools II — Python tools (AI-generated, BYO, HTTP-wrap) + managed-identity scopes](labs/module-M8-python-tools/) | Lab | 90 min | All |
-| M9 | 400 | [Agent Hooks — Stop + PostToolUse, prompt vs command, model tiers, sandbox limits](labs/module-M9-agent-hooks/) | Lab | 90 min | All |
-| M10 | 400 | [Audit, FinOps & observability — KQL on `customEvents`, token-cost analytics, model-tier strategy](labs/module-M10-audit-finops/) | Lab | 75 min | All |
-| M11 | 400 | [Enterprise topology — VNET-isolated observability, cross-tenant connectors, Agent Identity sidecar](labs/module-M11-enterprise-topology/) | Lab + Lecture | 90 min | All |
-| M12 | 400 | [Configuration as code — Bicep/ARM for the agent, YAML + REST API v2, knowledge-base persistence](labs/module-M12-config-as-code/) | Lecture + Lab | 90 min | All |
-| M13 | 400 | [Production rollout playbook + capstone (multi-agent incident drill end-to-end)](labs/module-M13-capstone/) | Capstone | 90 min | All |
+| 1 | 300 | [Promotion playbook: Privileged + Autonomous safely](labs/lab-01-promotion-playbook/) | Lecture + Exercise | 45 min | All |
+| 2 | 300 | [Incident platform connection (PagerDuty / ServiceNow / Azure Monitor)](labs/lab-02-incident-platform/) | Lab | 60 min | All |
+| 3 | 300 | [Response Plans: severity routing, custom-agent dispatch, deep-investigation Mode 2](labs/lab-03-response-plans/) | Lab | 90 min | All |
+| 4 | 300 | [Skills authoring (`SKILL.md` + tool attachments + Agent Playground)](labs/lab-04-skills-authoring/) | Lab | 75 min | All |
+| 5 | 300 | [Custom Tools I — Kusto (parameterized) and Link tools](labs/lab-05-kusto-link-tools/) | Lab | 60 min | All |
+| 6 | 300 | [Custom Agents in YAML — handoff chains, `allowed_skills`, multi-specialist patterns](labs/lab-06-custom-agents-yaml/) | Lab | 90 min | All |
+| 7 | 300 | [MCP integrations II — partner connectors, wildcards, 80-tool budget, Plugin Marketplace](labs/lab-07-mcp-integrations/) | Lab | 75 min | All |
+| 8 | 400 | [Custom Tools II — Python tools (AI-generated, BYO, HTTP-wrap) + managed-identity scopes](labs/lab-08-python-tools/) | Lab | 90 min | All |
+| 9 | 400 | [Agent Hooks — Stop + PostToolUse, prompt vs command, model tiers, sandbox limits](labs/lab-09-agent-hooks/) | Lab | 90 min | All |
+| 10 | 400 | [Audit, FinOps & observability — KQL on `customEvents`, token-cost analytics, model-tier strategy](labs/lab-10-audit-finops/) | Lab | 75 min | All |
+| 11 | 400 | [Enterprise topology — VNET-isolated observability, cross-tenant connectors, Agent Identity sidecar](labs/lab-11-enterprise-topology/) | Lab + Lecture | 90 min | All |
+| 12 | 400 | [Configuration as code — Bicep/ARM for the agent, YAML + REST API v2, knowledge-base persistence](labs/lab-12-config-as-code/) | Lecture + Lab | 90 min | All |
+| 13 | 400 | [Production rollout playbook + capstone (multi-agent incident drill end-to-end)](labs/lab-13-capstone/) | Capstone | 90 min | All |
 
-**Total: ~17 hours.** If time is limited to one day, cut one of {M5, M7, M11} but **do not** cut M1, M3, M9, M10, or M13.
+**Total: ~17 hours.** If time is limited to one day, cut one of {Lab 5, Lab 7, Lab 11} but **do not** cut Lab 1, Lab 3, Lab 9, Lab 10, or Lab 13.
 
 ## Directory Structure
 
@@ -67,19 +67,19 @@ SRE-Agent-L300-Course/
 ├── README.md                          # This file
 ├── labs/
 │   ├── README.md                      # Labs index
-│   ├── module-M1-promotion-playbook/
-│   ├── module-M2-incident-platform/
-│   ├── module-M3-response-plans/
-│   ├── module-M4-skills-authoring/
-│   ├── module-M5-kusto-link-tools/
-│   ├── module-M6-custom-agents-yaml/
-│   ├── module-M7-mcp-integrations/
-│   ├── module-M8-python-tools/
-│   ├── module-M9-agent-hooks/
-│   ├── module-M10-audit-finops/
-│   ├── module-M11-enterprise-topology/
-│   ├── module-M12-config-as-code/
-│   └── module-M13-capstone/
+│   ├── lab-01-promotion-playbook/
+│   ├── lab-02-incident-platform/
+│   ├── lab-03-response-plans/
+│   ├── lab-04-skills-authoring/
+│   ├── lab-05-kusto-link-tools/
+│   ├── lab-06-custom-agents-yaml/
+│   ├── lab-07-mcp-integrations/
+│   ├── lab-08-python-tools/
+│   ├── lab-09-agent-hooks/
+│   ├── lab-10-audit-finops/
+│   ├── lab-11-enterprise-topology/
+│   ├── lab-12-config-as-code/
+│   └── lab-13-capstone/
 ├── trainer-notes/
 │   ├── operations-runbook.md          # Day-of checklist, FAQs, escalation tree
 │   ├── timing-script.md               # Minute-by-minute facilitator script
@@ -88,22 +88,22 @@ SRE-Agent-L300-Course/
 ├── sandbox/
 │   ├── provision.sh                   # Per-attendee sandbox provisioning
 │   ├── teardown.sh                    # Sandbox cleanup
-│   └── cost-cap-watcher.bicep         # M12 cost-cap alert rule
+│   └── cost-cap-watcher.bicep         # Lab 12 cost-cap alert rule
 ├── rollout-pack/
 │   ├── README.md                      # Production rollout pack overview
-│   ├── production-rollout-1pager.md   # 10-step rollout playbook from M13
+│   ├── production-rollout-1pager.md   # 10-step rollout playbook from Lab 13
 │   ├── hook-stubs/
 │   │   ├── stop-prompt-completeness.yaml
 │   │   ├── posttooluse-command-block.yaml
 │   │   └── posttooluse-audit.yaml
 │   ├── bicep-skeleton.bicep           # Agent IaC skeleton
 │   ├── terraform-skeleton.tf          # Terraform AVM skeleton
-│   ├── workbook-export.json           # KQL workbook from M10
+│   ├── workbook-export.json           # KQL workbook from Lab 10
 │   └── deploy.sh                      # Smoke-test deployment script
 ├── feedback/
 │   └── post-workshop-survey.md        # 8-metric survey + open feedback
 └── reference/
-    ├── slide-deck.md                  # M1, M11 lectures + M3/M9/M10/M12 reference slides
+    ├── slide-deck.md                  # Lab 1, Lab 11 lectures + Lab 3/Lab 9/Lab 10/Lab 12 reference slides
     ├── sample-skill-repo/             # D7: good & bad SKILL.md examples
     ├── mcp-reference-servers/         # D8: npx + Python stdio MCP repos
     └── rest-api-v2-clients/           # D6: PowerShell + Python PUT client
@@ -171,7 +171,7 @@ This removes:
 
 ## Track Selection
 
-Attendees choose **one** track during registration and stay with it for M2, M3, and M13:
+Attendees choose **one** track during registration and stay with it for Labs 2, 3, and 13:
 
 | Track | Pros | Cons | Use case |
 |-------|------|------|----------|
@@ -185,66 +185,62 @@ Attendees choose **one** track during registration and stay with it for M2, M3, 
 
 ### Day 1 (9 AM – 5 PM, ~8 hours)
 
-| Time | Module | Duration | Notes |
+| Time | Lab | Duration | Notes |
 |------|--------|----------|-------|
-| 9:00–9:45 | M1: Promotion playbook | 45 min | Lecture + paired decision matrix |
-| 9:45–10:45 | M2: Incident platform | 60 min | Lab (parallel tracks) |
+| 9:00–9:45 | Lab 1: Promotion playbook | 45 min | Lecture + paired decision matrix |
+| 9:45–10:45 | Lab 2: Incident platform | 60 min | Lab (parallel tracks) |
 | 10:45–11:00 | Break | 15 min | |
-| 11:00–12:30 | M3: Response Plans | 90 min | Lab (multi-agent handoff) |
+| 11:00–12:30 | Lab 3: Response Plans | 90 min | Lab (multi-agent handoff) |
 | 12:30–1:00 | Lunch | 30 min | |
-| 1:00–2:15 | M4: Skills authoring | 75 min | Lab + Agent Playground |
+| 1:00–2:15 | Lab 4: Skills authoring | 75 min | Lab + Agent Playground |
 | 2:15–2:30 | Break | 15 min | |
-| 2:30–3:30 | M5: Kusto tools | 60 min | Lab (parameterized queries) |
-| 3:30–5:00 | M6: Custom Agents YAML | 90 min | Lab (3-agent chain) |
+| 2:30–3:30 | Lab 5: Kusto tools | 60 min | Lab (parameterized queries) |
+| 3:30–5:00 | Lab 6: Custom Agents YAML | 90 min | Lab (3-agent chain) |
 
 ### Day 2 (9 AM – 5 PM, ~9 hours)
 
-| Time | Module | Duration | Notes |
+| Time | Lab | Duration | Notes |
 |------|--------|----------|-------|
-| 9:00–10:30 | M7: MCP integrations | 90 min | Lab (80-tool budget, Plugin Marketplace) |
+| 9:00–10:30 | Lab 7: MCP integrations | 90 min | Lab (80-tool budget, Plugin Marketplace) |
 | 10:30–10:45 | Break | 15 min | |
-| 10:45–12:15 | M8: Python tools | 90 min | Lab (AI-gen + BYO + HTTP wrapper) |
+| 10:45–12:15 | Lab 8: Python tools | 90 min | Lab (AI-gen + BYO + HTTP wrapper) |
 | 12:15–1:00 | Lunch | 45 min | |
-| 1:00–2:30 | M9: Agent Hooks | 90 min | Lab (Stop + PostToolUse, prompt vs command) |
+| 1:00–2:30 | Lab 9: Agent Hooks | 90 min | Lab (Stop + PostToolUse, prompt vs command) |
 | 2:30–2:45 | Break | 15 min | |
-| 2:45–4:00 | M10: Audit & FinOps | 75 min | Lab (KQL workbook, token analytics) |
-| 4:00–5:30 | M11: Enterprise topology | 90 min | Lecture (30 min) + Lab (60 min) |
+| 2:45–4:00 | Lab 10: Audit & FinOps | 75 min | Lab (KQL workbook, token analytics) |
+| 4:00–5:30 | Lab 11: Enterprise topology | 90 min | Lecture (30 min) + Lab (60 min) |
 
 ### Optional extension (if 2 days + 1 afternoon)
 
-| Time | Module |
+| Time | Lab |
 |------|--------|
-| Day 3, 9–10:30 | M12: Configuration as code |
-| Day 3, 10:45–12:15 | M13: Capstone |
+| Day 3, 9–10:30 | Lab 12: Configuration as code |
+| Day 3, 10:45–12:15 | Lab 13: Capstone |
 
 ## Synchronization Points (Critical)
 
-These modules **must** run in lockstep across all three tracks:
+These labs **must** run in lockstep across all three tracks:
 
-- **M2:** All platforms connect their incident source at the same time (for synthetic-incident testing).
-- **M3:** All tracks fire test incidents and verify response plans fire simultaneously (checkpoint).
-- **M13:** Capstone drill — trainer fires three synthetic incidents; all attendees respond together.
+- **Lab 2:** All platforms connect their incident source at the same time (for synthetic-incident testing).
+- **Lab 3:** All tracks fire test incidents and verify response plans fire simultaneously (checkpoint).
+- **Lab 13:** Capstone drill — trainer fires three synthetic incidents; all attendees respond together.
 
 Designate **one trainer** per track; one **lead trainer** coordinates the checkpoint pulses via chat/radio.
 
 ## Success Metrics
-
-From [SREA-Level300.md § 6](../SREA-Level300.md#6-success-metrics):
 
 | Metric | Target |
 |--------|--------|
 | Attendees with a non-default response plan dispatching to a YAML-defined custom agent | 100% |
 | Attendees with at least one Stop hook + one PostToolUse hook attached at agent level | 100% |
 | Attendees with at least one Kusto tool **and** one Python tool wired into a custom agent | ≥90% |
-| Capstone (M13) — all three synthetic incidents handled end-to-end without manual intervention | ≥80% |
-| Audit workbook (M10) saved + shared with the attendee's team | ≥90% |
-| Attendees who land an agent-as-code PR (M12) within 2 weeks post-workshop | ≥75% |
+| Capstone (Lab 13) — all three synthetic incidents handled end-to-end without manual intervention | ≥80% |
+| Audit workbook (Lab 10) saved + shared with the attendee's team | ≥90% |
+| Attendees who land an agent-as-code PR (Lab 12) within 2 weeks post-workshop | ≥75% |
 | Production response plans flipped from Review → Autonomous within 6 weeks post-workshop | ≥50% (only where audit data supports it) |
 | Cost per attendee per workshop day | ≤USD 50 |
 
 ## Reference Index
-
-From [SREA-Level300.md § 7](../SREA-Level300.md#7-reference-index-advanced--additive-to-l200-7):
 
 **Capabilities (advanced)**
 - [Incident Response Plans](https://sre.azure.com/docs/capabilities/incident-response-plans)
@@ -290,5 +286,4 @@ From [SREA-Level300.md § 7](../SREA-Level300.md#7-reference-index-advanced--add
 
 **Version:** srea-l300-v1.0.0  
 **Last updated:** 2026-05-03  
-**Curriculum source:** [SREA-Level300.md](../SREA-Level300.md)  
 **Trainer runbook:** [trainer-notes/operations-runbook.md](trainer-notes/operations-runbook.md)

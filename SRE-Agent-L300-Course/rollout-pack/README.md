@@ -8,7 +8,7 @@ srea_version: srea-l300-v1.0.0
 
 **Attendees:** This is your take-home kit for rolling out the SRE Agent to production post-workshop.
 
-**Contents:** Bicep skeleton, hook YAML stubs (3), KQL workbook export, 10-step rollout playbook from M13.
+**Contents:** Bicep skeleton, hook YAML stubs (3), KQL workbook export, 10-step rollout playbook from Lab 13.
 
 ---
 
@@ -18,7 +18,7 @@ srea_version: srea-l300-v1.0.0
 |------|------|---------|
 | Agent IaC skeleton | agent-iac.bicep (or .tf) | Starting point for your agent resource + UAMI + role assignments + App Insights. Customize per your environment. |
 | Hook stubs (3) | stop-prompt-completeness.yaml, posttooluse-command-block.yaml, posttooluse-audit.yaml | Copy these into your agent's hook configuration. Customize matchers + timeouts per your organization's risk profile. |
-| KQL workbook | audit-workbook.json | Import into your App Insights to start monitoring agent activity on day one. All 5 queries from M10. |
+| KQL workbook | audit-workbook.json | Import into your App Insights to start monitoring agent activity on day one. All 5 queries from Lab 10. |
 | Rollout playbook | production-rollout-1pager.md | One-page summary of the 10 steps. Print it. Share it. Live by it. |
 
 ---
@@ -99,7 +99,7 @@ rollout-pack/
 → Check incident-platform credentials in Key Vault. Rotate if needed. Restart Builder.
 
 **"Test incident doesn't route"**  
-→ Did you delete the quickstart response plan (M2 checkpoint)? Verify at least one custom response plan exists in the unified grid view.
+→ Did you delete the quickstart response plan (Lab 2 checkpoint)? Verify at least one custom response plan exists in the unified grid view.
 
 **"App Insights query returns no rows"**  
 → Generate agent activity by asking the agent a question in chat or firing another test incident. App Insights data appears within 60 s.
@@ -114,8 +114,8 @@ rollout-pack/
 **Q: Can I rollout to production immediately after the workshop?**  
 A: Not recommended. Follow the 10-step playbook, starting with shadow mode (Review on all plans) for 2 weeks. Build confidence before flipping to Autonomous.
 
-**Q: What if I don't have an Entra ID admin for M11?**  
-A: Cross-tenant connectors require admin consent. If you skipped M11 during the workshop, you can do this async. Reference capabilities/cross-tenant-access docs.
+**Q: What if I don't have an Entra ID admin for Lab 11?**  
+A: Cross-tenant connectors require admin consent. If you skipped Lab 11 during the workshop, you can do this async. Reference capabilities/cross-tenant-access docs.
 
 **Q: How do I add new incident response plans after rollout?**  
 A: Create them in the Agent Canvas (portal UI) or via REST API v2 PUT /api/v2/extendedAgent/agents/{agentName}. Always attach hooks before promoting to Autonomous.

@@ -1,15 +1,15 @@
 # Capstone Scoring Rubric (D13)
 
-> **Module:** M13 — Production Rollout Playbook + Multi-Agent Incident Drill
+> **Lab:** Lab 13 — Production Rollout Playbook + Multi-Agent Incident Drill
 > **Duration:** 90 min capstone exercise
 > **Pass threshold:** ≥ 80% of total points
-> **Tied to:** [MD §6 Success Metrics](../SREA-Level300.md#6-success-metrics)
+> **Tied to:** Course Success Metrics
 
 ---
 
 ## Overview
 
-The trainer fires **three synthetic incidents** back-to-back using the D11 incident generator with `[TEST]` prefix. Attendees demonstrate that their full M1–M12 stack handles each incident end-to-end with **no human input after the trigger**.
+The trainer fires **three synthetic incidents** back-to-back using the D11 incident generator with `[TEST]` prefix. Attendees demonstrate that their full Labs 1–12 stack handles each incident end-to-end with **no human input after the trigger**.
 
 ---
 
@@ -27,7 +27,7 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 
 ## Drill 1 — `[TEST] P3 high latency`
 
-**Expected behavior:** Routed to `low-sev-triager` (M3) in **Review** mode, deep investigation off. Agent proposes one mitigation. Hooks audit the tool call.
+**Expected behavior:** Routed to `low-sev-triager` (Lab 3) in **Review** mode, deep investigation off. Agent proposes one mitigation. Hooks audit the tool call.
 
 ### Machine-Checkable Items (14 pts)
 
@@ -49,7 +49,7 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 
 ## Drill 2 — `[TEST] P1 db corruption`
 
-**Expected behavior:** Routed via `incident_triager` → `db_expert` → `notifier` (M6). Deep Investigation Mode 2 fires automatically. Stop hook (M9) ensures response includes root cause and recommended action. PostToolUse hook blocks `az group delete`. Notifier emits Teams + email.
+**Expected behavior:** Routed via `incident_triager` → `db_expert` → `notifier` (Lab 6). Deep Investigation Mode 2 fires automatically. Stop hook (Lab 9) ensures response includes root cause and recommended action. PostToolUse hook blocks `az group delete`. Notifier emits Teams + email.
 
 ### Machine-Checkable Items (31 pts)
 
@@ -76,7 +76,7 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 
 ## Drill 3 — `[TEST] P2 api 500s`
 
-**Expected behavior:** Same chain as Drill 2, but branches to `api_expert` instead of `db_expert`. Audit query (M10) shows which custom agent was selected and total token cost.
+**Expected behavior:** Same chain as Drill 2, but branches to `api_expert` instead of `db_expert`. Audit query (Lab 10) shows which custom agent was selected and total token cost.
 
 ### Machine-Checkable Items (23 pts)
 
@@ -87,7 +87,7 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 | 3.3 | Handoff to `api_expert` (not `db_expert`) | 5 | Thread shows correct branch: `incident_triager` → `api_expert` |
 | 3.4 | Handoff to `notifier` occurred | 3 | Thread shows `api_expert` → `notifier` |
 | 3.5 | Audit event present in App Insights | 3 | KQL query returns events for this thread |
-| 3.6 | Token cost visible via M10 audit query | 5 | KQL: `customEvents \| where Name == "ModelGeneration" and customDimensions.ThreadId == "<drill-thread>" \| summarize sum(toint(customDimensions.InputTokens) + toint(customDimensions.OutputTokens)) by customDimensions.AgentName` |
+| 3.6 | Token cost visible via Lab 10 audit query | 5 | KQL: `customEvents \| where Name == "ModelGeneration" and customDimensions.ThreadId == "<drill-thread>" \| summarize sum(toint(customDimensions.InputTokens) + toint(customDimensions.OutputTokens)) by customDimensions.AgentName` |
 
 ### Human-Judged Items (12 pts)
 
@@ -112,15 +112,15 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 
 ---
 
-## Tie to Success Metrics (MD §6)
+## Tie to Success Metrics (Course success metrics)
 
-| MD §6 Metric | Capstone Validation |
+| Success Metric | Capstone Validation |
 |-------------|---------------------|
 | Non-default response plan dispatching to YAML-defined custom agent (100%) | Drills 1–3 all verify response plan → custom agent dispatch |
 | At least one Stop hook + one PostToolUse hook at agent level (100%) | Drill 2 items 2.5 + 2.6 |
-| At least one Kusto tool + one Python tool in a custom agent (≥90%) | Drill 2/3 — `db_expert` and `api_expert` use Kusto tools from M5 |
+| At least one Kusto tool + one Python tool in a custom agent (≥90%) | Drill 2/3 — `db_expert` and `api_expert` use Kusto tools from Lab 5 |
 | All three synthetic incidents handled end-to-end without manual intervention (≥80%) | This rubric's pass threshold: ≥ 80% |
-| Audit workbook saved + shared (≥90%) | Drill 3 item 3.6 verifies M10 audit query |
+| Audit workbook saved + shared (≥90%) | Drill 3 item 3.6 verifies Lab 10 audit query |
 | Cost per attendee per day ≤ USD 50 | Monitored separately by D12 cost-cap watcher |
 
 ---
@@ -130,4 +130,4 @@ The trainer fires **three synthetic incidents** back-to-back using the D11 incid
 - Use the D11 synthetic-incident generator to fire all three incidents with `--prefix [TEST]`.
 - Machine-checkable items should be verified via App Insights KQL queries during the scoring window.
 - Human-judged items are scored by the trainer in real-time as notifications arrive.
-- If an attendee scores < 80%, review which module's output was missing and recommend targeted re-work.
+- If an attendee scores < 80%, review which lab's output was missing and recommend targeted re-work.

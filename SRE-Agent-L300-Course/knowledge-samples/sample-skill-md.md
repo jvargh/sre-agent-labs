@@ -1,6 +1,6 @@
 # SKILL.md Template: Container App Troubleshooting Guide
 
-**Purpose:** This is an example SKILL.md file for the L300 workshop (M4 — Skills Authoring). Attendees use this as a template to author their own skills.
+**Purpose:** This is an example SKILL.md file for the L300 workshop (Lab 4 — Skills Authoring). Attendees use this as a template to author their own skills.
 
 **What is a SKILL.md?**
 
@@ -286,7 +286,7 @@ requests
 ## Related Documentation & Runbooks
 
 - **Restart procedure:** See `sample-runbook-restart-containerapp.md`
-- **Architecture context:** See `sample-architecture.md` (M4 knowledge source)
+- **Architecture context:** See `sample-architecture.md` (Lab 4 knowledge source)
 - **Performance baseline:** See `performance-baseline.md` (CPU/memory normal ranges)
 - **Code hotspot analysis:** See `profiling-guide.md` (profiler setup for Node/Python)
 
@@ -373,9 +373,9 @@ requests
 
 ---
 
-## Skill Metadata for M4 Authoring Template
+## Skill Metadata for Lab 4 Authoring Template
 
-Use this YAML template when creating your own skill in M4:
+Use this YAML template when creating your own skill in Lab 4:
 
 ```yaml
 # skill-config.yaml
@@ -425,4 +425,4 @@ trigger_phrases:
 **Document Version:** 1.0 (Example/Template)  
 **Last Updated:** 2025-02-01  
 **Author:** Platform Engineering Team  
-**Usage:** M4 Workshop (Skills Authoring) — attendees copy and adapt for their own services
+**Usage:** Lab 4 Workshop (Skills Authoring) — attendees copy and adapt for their own services
