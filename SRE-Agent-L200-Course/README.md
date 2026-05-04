@@ -32,12 +32,12 @@ Send to attendees **1 week before** the workshop:
 |--------|-------|-------|------|----------|
 | M1 | 100 | What & Why: SRE Agent Concepts | Lecture | 30 min |
 | M2 | 100 | Access Control Model | Lecture + diagram walkthrough | 30 min |
-| M3 | 200 | Lab A — Provision Your First Agent | Hands-on | 45 min |
-| M4 | 200 | Lab B — Connect Code, Resources, and Knowledge | Hands-on | 45 min |
+| M3 | 200 | [Lab A — Provision Your First Agent](labs/lab-A-provision/) | Hands-on | 45 min |
+| M4 | 200 | [Lab B — Connect Code, Resources, and Knowledge](labs/lab-B-connect/) | Hands-on | 45 min |
 | — | — | ☕ Break | — | 10 min |
-| M5 | 200 | Lab C — First Investigation in Chat | Hands-on | 30 min |
-| M6 | 200 | Lab D — Deep Investigation (chat mode only) | Hands-on | 30 min |
-| M7 | 200 | Lab E — Automate: Connector + Custom Agent + Scheduled Task | Hands-on | 45 min |
+| M5 | 200 | [Lab C — First Investigation in Chat](labs/lab-C-first-investigation/) | Hands-on | 30 min |
+| M6 | 200 | [Lab D — Deep Investigation (chat mode only)](labs/lab-D-deep-investigation/) | Hands-on | 30 min |
+| M7 | 200 | [Lab E — Automate: Connector + Custom Agent + Scheduled Task](labs/lab-E-automate/) | Hands-on | 45 min |
 | M8 | 200 | Operate, Audit, Share | Lecture + click-through | 20 min |
 | M9 | 100 | Wrap-Up + Bridge to Level 300 | Lecture | 15 min |
 
@@ -50,6 +50,18 @@ Send to attendees **1 week before** the workshop:
 ```
 SRE-Agent-L200-Course/
 ├── README.md                          ← You are here — master workshop guide
+├── labs/
+│   ├── README.md                      ← Labs index
+│   ├── lab-A-provision/               ← M3: Provision Your First Agent
+│   ├── lab-B-connect/                 ← M4: Connect Code, Resources, and Knowledge
+│   ├── lab-C-first-investigation/     ← M5: First Investigation in Chat
+│   ├── lab-D-deep-investigation/      ← M6: Deep Investigation
+│   └── lab-E-automate/                ← M7: Automate: Connector + Custom Agent + Scheduled Task
+├── slides/                            ← Slide decks (M1, M2, M8, M9)
+├── handouts/                          ← Pre-flight checklist, glossary card, access-control cheatsheet
+├── prompts/                           ← Copy-pasteable chat prompts per lab
+├── sandbox/                           ← IaC for shared sandbox + sample workload
+├── feedback/                          ← Post-workshop survey
 ├── knowledge-samples/
 │   ├── sample-architecture.md         ← Sample architecture doc for Lab B upload
 │   └── sample-runbook-restart-containerapp.md  ← Sample runbook for Lab B upload

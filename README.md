@@ -10,8 +10,8 @@ Azure SRE Agent is a production-grade tool for incident response, root-cause ana
 
 | Course | Level | Duration | Audience | Labs/Modules | Status |
 |--------|-------|----------|----------|--------------|--------|
-| **Level 200** | Foundational → Hands-On | ~3.25 hrs | DevOps/SRE teams, new to SRE Agent | 5 labs (A–E) | Core curriculum |
-| **Level 300** | Advanced | ~17 hrs (2 days) | L200 graduates; operators & architects | 13 modules (M1–M13) | Advanced track |
+| [**Level 200**](SRE-Agent-L200-Course/) | Foundational → Hands-On | ~3.25 hrs | DevOps/SRE teams, new to SRE Agent | 5 labs (A–E) | Core curriculum |
+| [**Level 300**](SRE-Agent-L300-Course/) | Advanced | ~17 hrs (2 days) | L200 graduates; operators & architects | 13 modules (M1–M13) | Advanced track |
 
 ---
 

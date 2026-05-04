@@ -1,10 +1,3 @@
----
-title: Azure SRE Agent L300/400 Advanced Workshop
-version: srea-l300-v1.0.0
-source_md_sha: placeholder
-created_at: 2026-05-03T15:51:18Z
----
-
 # Azure SRE Agent L300/400 Advanced Workshop
 
 A 2-day, 17-hour instructor-led advanced workshop for DevOps and SRE-Ops practitioners who have completed Level 200. Attendees choose one of three parallel tracks (PagerDuty, ServiceNow, or Azure Monitor) and learn to configure custom agents, hooks, tools, and response plans for production incident response.
@@ -17,7 +10,7 @@ A 2-day, 17-hour instructor-led advanced workshop for DevOps and SRE-Ops practit
 | **Levels** | 300 (Advanced Operator) → 400 (Architect/Platform Owner) |
 | **Format** | Instructor-led, 70% hands-on labs |
 | **Attendee tracks** | PagerDuty / ServiceNow / Azure Monitor (choose one) |
-| **Hard prerequisite** | [SREA-Level200.md](../SREA-Level200.md) completion required |
+| **Hard prerequisite** | [Level 200 Workshop](../SRE-Agent-L200-Course/) completion required |
 | **Cost cap** | USD 50 per attendee per day |
 
 ## Prerequisites
@@ -51,19 +44,19 @@ Attendees must complete before Day 1:
 
 | # | Level | Title | Mode | Duration | Track |
 |----|-------|-------|------|----------|-------|
-| M1 | 300 | Promotion playbook: Privileged + Autonomous safely | Lecture + Exercise | 45 min | All |
-| M2 | 300 | Incident platform connection (PagerDuty / ServiceNow / Azure Monitor) | Lab | 60 min | All |
-| M3 | 300 | Response Plans: severity routing, custom-agent dispatch, deep-investigation Mode 2 | Lab | 90 min | All |
-| M4 | 300 | Skills authoring (`SKILL.md` + tool attachments + Agent Playground) | Lab | 75 min | All |
-| M5 | 300 | Custom Tools I — Kusto (parameterized) and Link tools | Lab | 60 min | All |
-| M6 | 300 | Custom Agents in YAML — handoff chains, `allowed_skills`, multi-specialist patterns | Lab | 90 min | All |
-| M7 | 300 | MCP integrations II — partner connectors, wildcards, 80-tool budget, Plugin Marketplace | Lab | 75 min | All |
-| M8 | 400 | Custom Tools II — Python tools (AI-generated, BYO, HTTP-wrap) + managed-identity scopes | Lab | 90 min | All |
-| M9 | 400 | Agent Hooks — Stop + PostToolUse, prompt vs command, model tiers, sandbox limits | Lab | 90 min | All |
-| M10 | 400 | Audit, FinOps & observability — KQL on `customEvents`, token-cost analytics, model-tier strategy | Lab | 75 min | All |
-| M11 | 400 | Enterprise topology — VNET-isolated observability, cross-tenant connectors, Agent Identity sidecar | Lab + Lecture | 90 min | All |
-| M12 | 400 | Configuration as code — Bicep/ARM for the agent, YAML + REST API v2, knowledge-base persistence | Lecture + Lab | 90 min | All |
-| M13 | 400 | Production rollout playbook + capstone (multi-agent incident drill end-to-end) | Capstone | 90 min | All |
+| M1 | 300 | [Promotion playbook: Privileged + Autonomous safely](labs/module-M1-promotion-playbook/) | Lecture + Exercise | 45 min | All |
+| M2 | 300 | [Incident platform connection (PagerDuty / ServiceNow / Azure Monitor)](labs/module-M2-incident-platform/) | Lab | 60 min | All |
+| M3 | 300 | [Response Plans: severity routing, custom-agent dispatch, deep-investigation Mode 2](labs/module-M3-response-plans/) | Lab | 90 min | All |
+| M4 | 300 | [Skills authoring (`SKILL.md` + tool attachments + Agent Playground)](labs/module-M4-skills-authoring/) | Lab | 75 min | All |
+| M5 | 300 | [Custom Tools I — Kusto (parameterized) and Link tools](labs/module-M5-kusto-link-tools/) | Lab | 60 min | All |
+| M6 | 300 | [Custom Agents in YAML — handoff chains, `allowed_skills`, multi-specialist patterns](labs/module-M6-custom-agents-yaml/) | Lab | 90 min | All |
+| M7 | 300 | [MCP integrations II — partner connectors, wildcards, 80-tool budget, Plugin Marketplace](labs/module-M7-mcp-integrations/) | Lab | 75 min | All |
+| M8 | 400 | [Custom Tools II — Python tools (AI-generated, BYO, HTTP-wrap) + managed-identity scopes](labs/module-M8-python-tools/) | Lab | 90 min | All |
+| M9 | 400 | [Agent Hooks — Stop + PostToolUse, prompt vs command, model tiers, sandbox limits](labs/module-M9-agent-hooks/) | Lab | 90 min | All |
+| M10 | 400 | [Audit, FinOps & observability — KQL on `customEvents`, token-cost analytics, model-tier strategy](labs/module-M10-audit-finops/) | Lab | 75 min | All |
+| M11 | 400 | [Enterprise topology — VNET-isolated observability, cross-tenant connectors, Agent Identity sidecar](labs/module-M11-enterprise-topology/) | Lab + Lecture | 90 min | All |
+| M12 | 400 | [Configuration as code — Bicep/ARM for the agent, YAML + REST API v2, knowledge-base persistence](labs/module-M12-config-as-code/) | Lecture + Lab | 90 min | All |
+| M13 | 400 | [Production rollout playbook + capstone (multi-agent incident drill end-to-end)](labs/module-M13-capstone/) | Capstone | 90 min | All |
 
 **Total: ~17 hours.** If time is limited to one day, cut one of {M5, M7, M11} but **do not** cut M1, M3, M9, M10, or M13.
 
@@ -74,19 +67,19 @@ SRE-Agent-L300-Course/
 ├── README.md                          # This file
 ├── labs/
 │   ├── README.md                      # Labs index
-│   ├── module-m1-promotion-playbook.md
-│   ├── module-m2-incident-platform.md
-│   ├── module-m3-response-plans.md
-│   ├── module-m4-skills-authoring.md
-│   ├── module-m5-kusto-tools.md
-│   ├── module-m6-custom-agents-yaml.md
-│   ├── module-m7-mcp-integrations.md
-│   ├── module-m8-python-tools.md
-│   ├── module-m9-agent-hooks.md
-│   ├── module-m10-audit-finops.md
-│   ├── module-m11-enterprise-topology.md
-│   ├── module-m12-configuration-as-code.md
-│   └── module-m13-capstone.md
+│   ├── module-M1-promotion-playbook/
+│   ├── module-M2-incident-platform/
+│   ├── module-M3-response-plans/
+│   ├── module-M4-skills-authoring/
+│   ├── module-M5-kusto-link-tools/
+│   ├── module-M6-custom-agents-yaml/
+│   ├── module-M7-mcp-integrations/
+│   ├── module-M8-python-tools/
+│   ├── module-M9-agent-hooks/
+│   ├── module-M10-audit-finops/
+│   ├── module-M11-enterprise-topology/
+│   ├── module-M12-config-as-code/
+│   └── module-M13-capstone/
 ├── trainer-notes/
 │   ├── operations-runbook.md          # Day-of checklist, FAQs, escalation tree
 │   ├── timing-script.md               # Minute-by-minute facilitator script
