@@ -1,10 +1,3 @@
----
-module: M13
-level: 400
-track: all
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Capstone Scoring Rubric (D13)
 
 > **Module:** M13 — Production Rollout Playbook + Multi-Agent Incident Drill
