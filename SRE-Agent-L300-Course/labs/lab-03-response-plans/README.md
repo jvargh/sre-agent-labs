@@ -1,14 +1,3 @@
----
-lab: 3
-level: 300
-duration_minutes: 90
-track: all
-dependencies:
-  - Lab 1
-  - Lab 2
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 3 — Response Plans: Severity Routing, Custom-Agent Dispatch, Deep-Investigation Mode 2
 
 > **Format:** Lab (90 min).

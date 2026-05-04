@@ -1,12 +1,3 @@
----
-lab: 1
-level: 300
-duration_minutes: 45
-track: all
-dependencies: []
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 1 — Promotion Playbook: Privileged + Autonomous Safely
 
 > **Format:** Lecture + paired exercise (45 min) — no hands-on lab.

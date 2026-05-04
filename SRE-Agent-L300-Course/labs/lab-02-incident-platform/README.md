@@ -1,13 +1,3 @@
----
-lab: 2
-level: 300
-duration_minutes: 60
-track: pagerduty|servicenow|azure-monitor
-dependencies:
-  - Lab 1
-source_md_sha: 37BDC62AD9BD827BE88ADFA55CFF3263C8EA120E6C4329BAA87C2968FA7DD102
----
-
 # Lab 2 — Incident Platform Connection
 
 > **Format:** Lab (60 min) — three parallel tracks.
