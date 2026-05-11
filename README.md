@@ -2,6 +2,8 @@
 
 Welcome to the comprehensive training curriculum for **Azure SRE Agent**. This repository hosts two hands-on courses designed to take you from foundational concepts to production-ready advanced operations. Whether you're a DevOps engineer, SRE practitioner, or platform owner, you'll find a course tailored to your expertise level.
 
+📥 **Download the overview deck:** [SRE Agent.pptx](SRE%20Agent.pptx)
+
 ---
 
 ## 🎯 Training Overview
